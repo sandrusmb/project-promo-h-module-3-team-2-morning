@@ -1,8 +1,8 @@
 # project-promo-h-module-3-team-2-morning
 
-Cada vez que se quiera hacer un *push* se debe realizar desde */project-new*
+Cada vez que se quiera hacer un **push** se debe realizar desde **/project-new**
 
-Recordad que la primera vez hay que hacer *npm install* desde */project-new* para que funcione el proyecto
+Recordad que la primera vez hay que hacer **npm install** desde **/project-new** para que funcione el proyecto
 
 ## Para hacer Merge, pasos a seguir:(se debe realizar en project-promo-h-module-3-team-2-morning/project-new)
 
