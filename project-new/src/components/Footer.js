@@ -1,6 +1,6 @@
 import React from 'react';
 import logoFooter from "../images/logo-adalab-80px.png";
-import '../stylesheets/Footer.scss';
+import '../stylesheets/Layout/Footer.scss';
 
 function Footer() {
     return (
