@@ -1,0 +1,42 @@
+.collapsable-box {
+  font-family: $opensans;
+  color: $grey;
+  min-width: 32rem;
+  border-bottom: solid 0.2rem $lightGrey;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    color: $mediumOrange;
+    font-size: 1.8rem;
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+}
+
+.arrow {
+  transition: transform ease 1s;
+}
+.collapsable-box__header {
+  cursor: pointer;
+}
+.collapsable-content {
+  text-transform: uppercase;
+}
+.hidden .arrow {
+  transform: translateY(-50%) rotate(-180deg);
+  margin-top: 1.5rem;
+}
+
+.hidden .collapsable-content {
+  display: none;
+}

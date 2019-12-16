@@ -1,0 +1,12 @@
+@import "core/reset";
+@import "core/variables";
+@import "components/icons";
+@import "layout/hero";
+@import "layout/footer";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+}
