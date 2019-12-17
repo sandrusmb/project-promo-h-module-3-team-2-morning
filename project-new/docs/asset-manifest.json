@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Adalab/project-promo-h-module-3-team-2-morning/static/css/main.fd08505f.chunk.css",
-    "main.js": "/Adalab/project-promo-h-module-3-team-2-morning/static/js/main.ee66507e.chunk.js",
-    "main.js.map": "/Adalab/project-promo-h-module-3-team-2-morning/static/js/main.ee66507e.chunk.js.map",
-    "runtime-main.js": "/Adalab/project-promo-h-module-3-team-2-morning/static/js/runtime-main.2652a17d.js",
-    "runtime-main.js.map": "/Adalab/project-promo-h-module-3-team-2-morning/static/js/runtime-main.2652a17d.js.map",
-    "static/js/2.9335742d.chunk.js": "/Adalab/project-promo-h-module-3-team-2-morning/static/js/2.9335742d.chunk.js",
-    "static/js/2.9335742d.chunk.js.map": "/Adalab/project-promo-h-module-3-team-2-morning/static/js/2.9335742d.chunk.js.map",
-    "index.html": "/Adalab/project-promo-h-module-3-team-2-morning/index.html",
-    "precache-manifest.8562059216c8e5ac85e69ea83232b183.js": "/Adalab/project-promo-h-module-3-team-2-morning/precache-manifest.8562059216c8e5ac85e69ea83232b183.js",
-    "service-worker.js": "/Adalab/project-promo-h-module-3-team-2-morning/service-worker.js",
-    "static/css/main.fd08505f.chunk.css.map": "/Adalab/project-promo-h-module-3-team-2-morning/static/css/main.fd08505f.chunk.css.map",
-    "static/js/2.9335742d.chunk.js.LICENSE": "/Adalab/project-promo-h-module-3-team-2-morning/static/js/2.9335742d.chunk.js.LICENSE",
-    "static/media/logo-header.png": "/Adalab/project-promo-h-module-3-team-2-morning/static/media/logo-header.ed8d747f.png"
+    "main.css": "./static/css/main.fd08505f.chunk.css",
+    "main.js": "./static/js/main.ee66507e.chunk.js",
+    "main.js.map": "./static/js/main.ee66507e.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.7fe83397.js",
+    "runtime-main.js.map": "./static/js/runtime-main.7fe83397.js.map",
+    "static/js/2.9335742d.chunk.js": "./static/js/2.9335742d.chunk.js",
+    "static/js/2.9335742d.chunk.js.map": "./static/js/2.9335742d.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.33041dbf540bf2064b5414449da607b6.js": "./precache-manifest.33041dbf540bf2064b5414449da607b6.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.fd08505f.chunk.css.map": "./static/css/main.fd08505f.chunk.css.map",
+    "static/js/2.9335742d.chunk.js.LICENSE": "./static/js/2.9335742d.chunk.js.LICENSE",
+    "static/media/logo-header.png": "./static/media/logo-header.ed8d747f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2652a17d.js",
+    "static/js/runtime-main.7fe83397.js",
     "static/js/2.9335742d.chunk.js",
     "static/css/main.fd08505f.chunk.css",
     "static/js/main.ee66507e.chunk.js"
