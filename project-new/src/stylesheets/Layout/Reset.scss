@@ -1,0 +1,22 @@
+@import "../Core/variables.scss";
+.card__reset {
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  width: 7.5rem;
+  height: 3rem;
+  border: 0.1rem solid $white;
+  background: $white;
+
+  font-family: $opensans;
+  color: $grey;
+  font-size: 1.2rem;
+  line-height: 1.67;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
