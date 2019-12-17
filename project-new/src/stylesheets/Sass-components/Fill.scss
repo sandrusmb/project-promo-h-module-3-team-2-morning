@@ -1,0 +1,16 @@
+@import "../../stylesheets/Core/variables.scss";
+
+.collapsable-box {
+  font-family: $opensans;
+  color: $grey;
+  min-width: 32rem;
+  border-bottom: solid 0.2rem $lightGrey;
+}
+// .hidden .arrow {
+//   transform: translateY(-50%) rotate(-180deg);
+//   margin-top: 1.5rem;
+// }
+
+// .hidden .collapsable-content {
+//   display: none;
+// }
