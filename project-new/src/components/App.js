@@ -1,5 +1,4 @@
 import React from 'react';
-
 import '../stylesheets/App.scss';
 import Header from './Header';
 import Card from './Card';
