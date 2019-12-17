@@ -2,6 +2,7 @@ import React from 'react';
 import Design from './Form-components/Design';
 import Fill from './Form-components/Fill';
 import Share from './Form-components/Share';
+import '../stylesheets/Sass-components/Form.scss';
 
 function Form() {
     return (
