@@ -1,5 +1,5 @@
 import React from "react";
-import "../../stylesheets/Layout/User.scss";
+import "../../stylesheets/Sass-components/User.scss";
 
 function User() {
   return (

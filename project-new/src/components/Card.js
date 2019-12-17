@@ -3,7 +3,7 @@ import Reset from "./Card-components/Reset";
 import User from "./Card-components/User";
 import Photo from "./Card-components/Photo";
 import Icons from "./Card-components/Icons";
-import "../stylesheets/Layout/Card.scss";
+import '../stylesheets/Sass-components/Card.scss';
 
 function Card() {
   return (
