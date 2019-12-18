@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.d58dac86.chunk.css",
+    "main.js": "./static/js/main.e524c62b.chunk.js",
+    "main.js.map": "./static/js/main.e524c62b.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.7fe83397.js",
+    "runtime-main.js.map": "./static/js/runtime-main.7fe83397.js.map",
+    "static/js/2.9335742d.chunk.js": "./static/js/2.9335742d.chunk.js",
+    "static/js/2.9335742d.chunk.js.map": "./static/js/2.9335742d.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.32652f81802dc3f6e8f3580b9bd882cb.js": "./precache-manifest.32652f81802dc3f6e8f3580b9bd882cb.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.d58dac86.chunk.css.map": "./static/css/main.d58dac86.chunk.css.map",
+    "static/js/2.9335742d.chunk.js.LICENSE": "./static/js/2.9335742d.chunk.js.LICENSE",
+    "static/media/Card.scss": "./static/media/background.a82e2735.png",
+    "static/media/logo-header.png": "./static/media/logo-header.ed8d747f.png",
+    "static/media/Photo.scss": "./static/media/photodefault.157001de.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7fe83397.js",
+    "static/js/2.9335742d.chunk.js",
+    "static/css/main.d58dac86.chunk.css",
+    "static/js/main.e524c62b.chunk.js"
+  ]
+}
