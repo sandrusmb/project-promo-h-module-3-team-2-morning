@@ -1,0 +1,123 @@
+@import "./Core/normalize.scss";
+@import "./Core/variables.scss";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $lightPink;
+  height: 100%;
+
+  &__logo {
+    width: 25rem;
+    padding-top: 9.5rem;
+  }
+
+  &__title {
+    font-size: 1.92rem;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    color: $mediumOrange;
+    padding-top: 3.54rem;
+  }
+
+  &__text {
+    color: $darkGreen;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.28rem;
+    max-width: 26.48rem;
+  }
+
+  &__steps {
+    margin: 1.78rem 2.64rem 3.86rem 2.56rem;
+    display: grid;
+    justify-items: center;
+    color: $grey;
+    width: 26.8rem;
+    height: 7.38rem;
+    border: solid 0.16rem rgba(225, 115, 52, 0.21);
+    border-radius: 0.4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.far {
+  text-align: center;
+  height: 2.6rem;
+  width: 3.2rem;
+  font-size: 2.24rem;
+  color: $mediumOrange;
+
+  margin-top: 1.5rem;
+}
+
+.fas {
+  text-align: center;
+  font-size: 2.24rem;
+  height: 2.6rem;
+  width: 3.2rem;
+  color: $mediumOrange;
+  margin-top: 1.5rem;
+}
+
+.start-button {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+
+  font-size: 1.6rem;
+  color: $white;
+  width: 12.9rem;
+  min-height: 4.2rem;
+  border-radius: 2.1rem;
+
+  background-color: $mediumBlue;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.grid-text {
+  margin-bottom: 1.78rem;
+  margin-top: 0;
+  font-size: 1.28rem;
+}
+
+@media all and (min-width: 768px) {
+  .hero {
+    &__logo {
+      width: 41.9rem;
+      padding-top: 15rem;
+      // margin-top: 6rem;
+    }
+
+    &__title {
+      font-size: 2.4rem;
+      padding-top: 3.1rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      max-width: 33.1rem;
+    }
+
+    &__steps {
+      // margin: 2.7rem 22.1rem 18.6rem 22.2rem;
+      width: 32.5rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .start-button {
+    margin-bottom: 5.9rem;
+  }
+
+  .grid-text {
+    font-size: 1.6rem;
+  }
+}
