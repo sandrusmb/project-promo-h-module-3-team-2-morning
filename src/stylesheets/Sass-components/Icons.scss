@@ -1,0 +1,37 @@
+@import "../Core/variables.scss";
+
+.card__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.6rem;
+}
+.card__icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  border: $lightGreen solid 0.2rem;
+  border-radius: 1.6rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  color: $darkGreen;
+  margin: 0 0.5rem 0 0.5rem;
+}
+// .far {
+//   text-align: center;
+//   height: 2.6rem;
+//   width: 3.2rem;
+//   font-size: 2.24rem;
+//   color: $mediumOrange;
+//   margin-top: 1.5rem;
+// }
+
+// .fas {
+//   text-align: center;
+//   font-size: 2.24rem;
+//   height: 2.6rem;
+//   width: 3.2rem;
+//   color: $mediumOrange;
+//   margin-top: 1.5rem;
+// }
