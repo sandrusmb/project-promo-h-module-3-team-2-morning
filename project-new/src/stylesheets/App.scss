@@ -1,4 +1,5 @@
 @import "./Core/variables.scss";
+@import "./Core/normalize.scss";
 
 .main {
   background-image: linear-gradient(to bottom, $lightPink, $white 9%);
