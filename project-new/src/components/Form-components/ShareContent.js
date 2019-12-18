@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../stylesheets/Sass-components/ShareContent.scss'
 
 
 function ShareContent() {

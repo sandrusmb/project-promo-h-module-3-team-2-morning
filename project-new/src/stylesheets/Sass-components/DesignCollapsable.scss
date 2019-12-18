@@ -1,0 +1,68 @@
+@import "../../stylesheets/Core/variables.scss";
+
+.collapsable-box {
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon {
+        color: $mediumOrange;
+        font-size: 1.8rem;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 1rem;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+}
+
+.arrow {
+    transition: transform ease 1s;
+}
+
+.collapsable-box__header {
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    font-size: 1.8rem;
+    font-family: unset;
+    width: 1.6rem;
+    height: 1.8rem;
+    color: $grey;
+
+}
+
+.far {
+    text-align: center;
+    height: 2.6rem;
+    width: 3.2rem;
+    font-size: 2.24rem;
+    color: $mediumOrange;
+    margin-top: 1.5rem;
+}
+
+.fas {
+    text-align: center;
+    font-size: 2.24rem;
+    height: 2.6rem;
+    width: 3.2rem;
+    color: $mediumOrange;
+    margin-top: 1.5rem;
+}
+
+
+// .hidden .arrow {
+//     transform: translateY(-50%) rotate(-180deg);
+//     margin-top: 1.5rem;
+// }
+
+// .hidden .collapsable-content {
+//     display: none;
+// }

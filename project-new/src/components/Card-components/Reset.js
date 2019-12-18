@@ -1,5 +1,5 @@
 import React from "react";
-import "../../stylesheets/Layout/Reset.scss";
+import "../../stylesheets/Sass-components/Reset.scss";
 
 function Reset() {
   return (
