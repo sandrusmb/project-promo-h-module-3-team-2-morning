@@ -1,0 +1,13 @@
+@import "./Core/variables.scss";
+@import "./Core/normalize.scss";
+
+.main {
+  background-image: linear-gradient(to bottom, $lightPink, $white 9%);
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 0 4rem 0 0;
+  }
+}

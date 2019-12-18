@@ -1,0 +1,45 @@
+@import "../Core/variables.scss";
+
+.card {
+  background-image: url("../../images/background.png");
+  height: 45.7rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  @media all and (min-width: 768px) {
+    width: 40%;
+    height: unset;
+    margin: 2.3rem 0 2.1rem 0;
+    border-radius: 6px;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 60%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+
+    @media all and (min-width: 768px) {
+      padding-bottom: 15rem;
+      padding-top: 12rem;
+    }
+  }
+}
+
+.card-container {
+  width: 24rem;
+  height: auto;
+  background-color: $white;
+  border-radius: 1.8rem;
+}
+
+// i {
+//   font-size: 1.8rem;
+// }
