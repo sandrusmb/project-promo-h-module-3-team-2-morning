@@ -23,6 +23,9 @@
 
 .arrow {
   transition: transform ease 1s;
+  &:hover {
+    transform: translateY(-50%) rotate(-180deg);
+  }
 }
 
 .collapsable-box__header {
@@ -31,7 +34,6 @@
 
 .fa-chevron-down {
   font-size: 1.8rem;
-  font-family: unset;
   width: 1.6rem;
   height: 1.8rem;
   color: $grey;
@@ -47,17 +49,16 @@
 // }
 
 // .fas {
-//     text-align: center;
-//     font-size: 2.24rem;
-//     height: 2.6rem;
-//     width: 3.2rem;
-//     color: $mediumOrange;
-//     margin-top: 1.5rem;
+// text-align: center;
+// font-size: 2.24rem;
+// height: 2.6rem;
+// width: 3.2rem;
+// color: $mediumOrange;
+// margin-top: 1.5rem;
 // }
-
 // .hidden .arrow {
-//     transform: translateY(-50%) rotate(-180deg);
-//     margin-top: 1.5rem;
+//   transform: translateY(-50%) rotate(-180deg);
+//   margin-top: 1.5rem;
 // }
 
 // .hidden .collapsable-content {
