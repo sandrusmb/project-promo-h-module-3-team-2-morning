@@ -1,0 +1,21 @@
+ [{
+         "title": "Contacta por teléfono",
+         "js": "js-card__icon--phone",
+         "i": "fas fa-mobile-alt"
+     },
+     {
+         "title": "Escríbeme por email",
+         "js": "js-card__icon--email",
+         "i": "far fa-envelope"
+     },
+     {
+         "title": "Añádeme a tu red de Linkedin",
+         "js": "js-card__icon--linkedin",
+         "i": "fab fa-linkedin-in"
+     },
+     {
+         "title": "Visita mi portfolio de Github",
+         "js": "js-card__icon--github",
+         "i": "fab fa-github-alt"
+     }
+ ]
