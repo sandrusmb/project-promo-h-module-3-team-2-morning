@@ -2,22 +2,23 @@ import React from 'react';
 import "../../stylesheets/Sass-components/Icons.scss";
 
 function Icons(props) {
-  console.log(props.iconsApi)
+  console.log(props.icons)
   return (
     <footer className="card__social">
-      {props.iconsApi.map((iconApi, index) => {
-        return <div>
+      {props.icons.map((icon, index) => {
+        return (
           <a
             key={index}
             className="card__icon js-card__icon js-card__icon--phone js-icon-deactivated"
             target="_blank"
-            title={iconApi.title}
-            href=""></a>
-          <i className={props.iconApi.i}></i>
-        </div>
+            title={icon.title}
+            href="">
+            <i className={icon.i}></i>
+          </a>
+        )
       }
       )}
-    </footer>
+    </footer >
 
   );
 }
