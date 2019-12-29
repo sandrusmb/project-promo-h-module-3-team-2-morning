@@ -1,21 +1,25 @@
  [{
          "title": "Contacta por teléfono",
          "js": "js-card__icon--phone",
-         "i": "fas fa-mobile-alt"
+         "i": "fas fa-mobile-alt",
+         "prefix": "tel:"
      },
      {
          "title": "Escríbeme por email",
          "js": "js-card__icon--email",
-         "i": "far fa-envelope"
+         "i": "far fa-envelope",
+         "prefix": "mailto:"
      },
      {
          "title": "Añádeme a tu red de Linkedin",
          "js": "js-card__icon--linkedin",
-         "i": "fab fa-linkedin-in"
+         "i": "fab fa-linkedin-in",
+         "prefix": "https://www.linkedin.com/in/"
      },
      {
          "title": "Visita mi portfolio de Github",
          "js": "js-card__icon--github",
-         "i": "fab fa-github-alt"
+         "i": "fab fa-github-alt",
+         "prefix": "https://www.github.com/"
      }
  ]

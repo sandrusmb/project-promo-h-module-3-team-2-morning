@@ -12,7 +12,7 @@ function Icons(props) {
             className="card__icon js-card__icon js-card__icon--phone js-icon-deactivated"
             target="_blank"
             title={icon.title}
-            href="">
+            href={icon.prefix}>
             <i className={icon.i}></i>
           </a>
         )
