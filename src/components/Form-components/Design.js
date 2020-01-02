@@ -1,5 +1,4 @@
 import React from "react";
-import DesignCollapsable from "./DesignCollapsable";
 import DesignPalettes from "./DesignPalettes";
 import "../../stylesheets/Sass-components/Design.scss";
 import DesignPalette from "./DesignPalette";
@@ -15,7 +14,6 @@ class Design extends React.Component {
   render() {
     return (
       <section className="collapsable-box design">
-        <DesignCollapsable />
         <DesignPalettes>
           {this.state.data.map((paleta, key) => {
             return (

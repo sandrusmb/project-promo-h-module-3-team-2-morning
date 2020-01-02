@@ -5,17 +5,25 @@ import Card from "./Card";
 import Form from "./Form";
 import Footer from "./Footer";
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <main className="main">
-        <Card />
-        <Form />
-      </main>
-      <Footer />
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+
+    return (
+      <div>
+        <Header />
+        <main className="main">
+          <Card />
+          <Form />
+        </main>
+        <Footer />
+      </div>
+
+    );
+  }
 }
 
 export default App;
