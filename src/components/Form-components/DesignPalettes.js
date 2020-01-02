@@ -1,6 +1,5 @@
 import React from "react";
 import "../../stylesheets/Sass-components/DesignPalettes.scss";
-import DesignPalette from "./DesignPalette";
 
 function DesignPalettes(props) {
   return (
