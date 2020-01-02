@@ -1,7 +1,21 @@
 import React from "react";
 import "../../stylesheets/Sass-components/DesignPalettes.scss";
+import DesignPalette from "./DesignPalette";
 
-function DesignPalettes() {
+function DesignPalettes(props) {
+  return (
+    <div className="collapsable-content js-content color-box">
+      <h3 className="color-box__title">Colores</h3>
+      <div className="color-box__palettes">
+        <p>{props.children}</p>
+      </div>
+    </div>
+  );
+}
+
+export default DesignPalettes;
+
+/* function DesignPalettes() {
   return (
     <div className="collapsable-content js-content color-box">
       <h3 className="color-box__title">Colores</h3>
@@ -58,6 +72,4 @@ function DesignPalettes() {
       </div>
     </div>
   );
-}
-
-export default DesignPalettes;
+} */

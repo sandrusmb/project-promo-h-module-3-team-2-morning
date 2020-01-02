@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../../stylesheets/Sass-components/Collapsable.scss'
 class Collapsable extends React.Component {
 
     render() {
