@@ -23,9 +23,9 @@ class DesignPalette extends React.Component {
                 defaultChecked={this.props.defaultChecked}
               />
               <div className="palette">
-                <div className="palette__box--darkGreen"></div>
-                <div className="palette__box--medGreen"></div>
-                <div className="palette__box--lightGreen"></div>
+                <div className={this.props.color1}></div>
+                <div className={this.props.color2}></div>
+                <div className={this.props.color3}></div>
               </div>
             </label>
           </div>

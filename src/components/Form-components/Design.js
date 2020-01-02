@@ -25,6 +25,9 @@ class Design extends React.Component {
                 value={paleta.value}
                 name={paleta.name}
                 defaultChecked={paleta.defaultChecked}
+                color1={paleta.colors.color1}
+                color2={paleta.colors.color2}
+                color3={paleta.colors.color3}
               />
             );
           })}
