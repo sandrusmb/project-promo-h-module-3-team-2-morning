@@ -1,0 +1,34 @@
+[
+  {
+    "htmlFor": "palette1",
+    "id": "palette1",
+    "type": "radio",
+    "value": "1",
+    "name": "palette",
+    "defaultChecked": "defaultChecked"
+  },
+  {
+    "htmlFor": "palette2",
+    "id": "palette2",
+    "type": "radio",
+    "value": "2",
+    "name": "palette",
+    "defaultChecked": ""
+  },
+  {
+    "htmlFor": "palette2",
+    "id": "palette2",
+    "type": "radio",
+    "value": "2",
+    "name": "palette",
+    "defaultChecked": ""
+  },
+  {
+    "htmlFor": "palette3",
+    "id": "palette3",
+    "type": "radio",
+    "value": "3",
+    "name": "palette",
+    "defaultChecked": ""
+  }
+]
