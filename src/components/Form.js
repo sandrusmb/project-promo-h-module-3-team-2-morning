@@ -25,10 +25,11 @@ class Form extends React.Component {
                     <Design />
                 </section>
 
-
                 <section className="collapsable-box fill hidden">
                     <Collapsable icons={data[1].icon} names={data[1].name} />
-                    <Fill />
+                    <Fill
+                        handleSearch={handleSearch}
+                    />
                 </section>
 
                 <section className="collapsable-box hidden">
