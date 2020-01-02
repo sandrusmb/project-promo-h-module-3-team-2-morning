@@ -7,7 +7,8 @@ function DesignCollapsable() {
             <div>
                 <i className="far fa-object-ungroup collapsable-box__icon"></i>
                 <h2 className="collapsable-box__title">
-                    Diseña</h2>
+                    Diseña
+                </h2>
             </div>
             <i className="fas fa-chevron-down arrow"></i>
         </header>
