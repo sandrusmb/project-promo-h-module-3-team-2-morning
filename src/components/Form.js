@@ -7,6 +7,7 @@ import collapsableApi from './api/collapsableApi.json';
 import '../stylesheets/Sass-components/Form.scss';
 
 
+
 class Form extends React.Component {
     constructor(props) {
         super(props);
@@ -14,6 +15,7 @@ class Form extends React.Component {
             collapsable: collapsableApi
         };
     }
+
 
     render() {
         const data = this.state.collapsable;
@@ -28,7 +30,7 @@ class Form extends React.Component {
                 <section className="collapsable-box fill hidden">
                     <Collapsable icons={data[1].icon} names={data[1].name} />
                     <Fill
-                        handleSearch={handleSearch}
+                        handleInput={this.props.handleInput}
                     />
                 </section>
 

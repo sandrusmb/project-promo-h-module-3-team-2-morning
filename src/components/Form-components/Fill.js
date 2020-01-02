@@ -10,7 +10,11 @@ class Fill extends React.Component {
     }
 
     handleInput(ev) {
-        this.props.handleInput(ev.target.value);
+        this.props.handleInput({
+            id: ev.target.id,
+            inputValue: ev.target.value
+        }
+        );
     }
 
     render() {
@@ -27,6 +31,7 @@ class Fill extends React.Component {
                     placeholder="Ej: Sally Jill"
                     required
                     defaultValue=""
+                    onChange={this.handleInput}
                 />
                 <label className="form__label" htmlFor="job">
                     Puesto
@@ -39,6 +44,7 @@ class Fill extends React.Component {
                     placeholder="Ej: Front-end unicorn"
                     required
                     defaultValue=""
+                    onChange={this.handleInput}
                 />
                 <label className="form__label" htmlFor="photo">
                     Imagen de perfil

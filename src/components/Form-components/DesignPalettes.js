@@ -6,7 +6,7 @@ function DesignPalettes(props) {
     <div className="collapsable-content js-content color-box">
       <h3 className="color-box__title">Colores</h3>
       <div className="color-box__palettes">
-        <p>{props.children}</p>
+        <div>{props.children}</div>
       </div>
     </div>
   );

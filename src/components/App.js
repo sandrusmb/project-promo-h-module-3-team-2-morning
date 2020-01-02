@@ -5,11 +5,15 @@ import Card from "./Card";
 import Form from "./Form";
 import Footer from "./Footer";
 
-class App extends React.Component {
-  constructor() {
-    super();
-  }
 
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleInput = this.handleInput.bind(this);
+  }
+  handleInput(data) {
+    console.log(data);
+  }
   render() {
 
     return (
@@ -17,7 +21,7 @@ class App extends React.Component {
         <Header />
         <main className="main">
           <Card />
-          <Form />
+          <Form handleInput={this.handleInput} />
         </main>
         <Footer />
       </div>
