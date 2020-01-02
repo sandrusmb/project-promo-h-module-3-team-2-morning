@@ -3,30 +3,29 @@ import Reset from "./Card-components/Reset";
 import User from "./Card-components/User";
 import Photo from "./Card-components/Photo";
 import IconsCard from "./Card-components/Icons";
-import '../stylesheets/Sass-components/Card.scss';
-import iconsApi from '../api/IconsApi.json';
+import "../stylesheets/Sass-components/Card.scss";
+import iconsApi from "../api/IconsApi.json";
 
 class Card extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      icons: iconsApi,
-
-    }
+      icons: iconsApi
+    };
   }
 
   render() {
     return (
-      < section className="card" >
+      <section className="card">
         <div className="card__wrapper">
           <Reset />
           <article className="card-container js-card-container">
             <User formData={this.props.formData} />
             <Photo />
-            <IconsCard icons={this.state.icons} />
+            <IconsCard icons={this.state.icons} formData={this.props.formData} />
           </article>
         </div>
-      </section >
+      </section>
     );
   }
 }
