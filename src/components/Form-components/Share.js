@@ -1,5 +1,4 @@
 import React from 'react';
-import ShareCollapsable from './ShareCollapsable';
 import ShareContent from './ShareContent';
 import '../../stylesheets/Sass-components/Share.scss'
 
@@ -7,7 +6,6 @@ import '../../stylesheets/Sass-components/Share.scss'
 function Share() {
     return (
         <ShareContent />
-
     );
 }
 export default Share;

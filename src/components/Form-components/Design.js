@@ -1,5 +1,4 @@
 import React from 'react';
-import DesignCollapsable from './DesignCollapsable';
 import DesignPalettes from './DesignPalettes';
 import '../../stylesheets/Sass-components/Design.scss'
 
@@ -7,9 +6,7 @@ import '../../stylesheets/Sass-components/Design.scss'
 
 function Design() {
     return (
-
         <DesignPalettes />
-
     );
 }
 
