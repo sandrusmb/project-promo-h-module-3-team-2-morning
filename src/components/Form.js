@@ -10,6 +10,9 @@ import '../stylesheets/Sass-components/Form.scss';
 class Form extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            collapsable: collapsableApi
+        };
     }
 
     render() {
