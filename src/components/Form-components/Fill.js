@@ -40,7 +40,7 @@ class Fill extends React.Component {
                     type="text"
                     className="form__input js-form__input js-role"
                     name="job"
-                    id="role"
+                    id="job"
                     placeholder="Ej: Front-end unicorn"
                     required
                     defaultValue=""

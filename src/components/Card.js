@@ -10,22 +10,23 @@ class Card extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      icons: iconsApi
+      icons: iconsApi,
+
     }
   }
 
   render() {
     return (
-      <section className="card">
+      < section className="card" >
         <div className="card__wrapper">
           <Reset />
           <article className="card-container js-card-container">
-            <User />
+            <User formData={this.props.formData} />
             <Photo />
             <IconsCard icons={this.state.icons} />
           </article>
         </div>
-      </section>
+      </section >
     );
   }
 }
