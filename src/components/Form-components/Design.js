@@ -7,10 +7,9 @@ import '../../stylesheets/Sass-components/Design.scss'
 
 function Design() {
     return (
-        <section className="collapsable-box design">
-            <DesignCollapsable />
-            <DesignPalettes />
-        </section>
+
+        <DesignPalettes />
+
     );
 }
 

@@ -6,10 +6,8 @@ import '../../stylesheets/Sass-components/Share.scss'
 
 function Share() {
     return (
-        <section className="collapsable-box hidden">
-            <ShareCollapsable />
-            <ShareContent />
-        </section>
+        <ShareContent />
+
     );
 }
 export default Share;
