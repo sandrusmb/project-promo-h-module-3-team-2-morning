@@ -6,6 +6,7 @@ import Collapsable from './Form-components/Collapsable';
 import collapsableApi from './api/collapsableApi.json';
 import '../stylesheets/Sass-components/Form.scss';
 
+
 class Form extends React.Component {
     constructor(props) {
         super(props);
