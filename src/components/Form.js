@@ -3,8 +3,9 @@ import Design from './Form-components/Design';
 import Fill from './Form-components/Fill';
 import Share from './Form-components/Share';
 import Collapsable from './Form-components/Collapsable';
-import collapsableApi from './api/collapsableApi.json';
+import collapsableApi from '../api/collapsableApi.json';
 import '../stylesheets/Sass-components/Form.scss';
+
 
 
 class Form extends React.Component {
@@ -15,6 +16,7 @@ class Form extends React.Component {
         };
     }
 
+
     render() {
         const data = this.state.collapsable;
 
@@ -22,13 +24,15 @@ class Form extends React.Component {
             <form className="form">
                 <section className="collapsable-box design">
                     <Collapsable icons={data[0].icon} names={data[0].name} />
-                    <Design />
+                    <Design
+                        handlePalette={this.props.handlePalette} />
                 </section>
-
 
                 <section className="collapsable-box fill hidden">
                     <Collapsable icons={data[1].icon} names={data[1].name} />
-                    <Fill />
+                    <Fill
+                        handleInput={this.props.handleInput}
+                    />
                 </section>
 
                 <section className="collapsable-box hidden">

@@ -2,7 +2,7 @@ import React from "react";
 import DesignPalettes from "./DesignPalettes";
 import "../../stylesheets/Sass-components/Design.scss";
 import DesignPalette from "./DesignPalette";
-import api from "../api/data";
+import api from "../../api/data.json";
 
 // No sabemos porque existe ese design
 
@@ -28,7 +28,7 @@ class Design extends React.Component {
                 color1={paleta.colors.color1}
                 color2={paleta.colors.color2}
                 color3={paleta.colors.color3}
-              />
+                handlePalette={this.props.handlePalette} />
             );
           })}
         </DesignPalettes>

@@ -1,27 +1,24 @@
-import React from 'react';
+import React from "react";
 import "../../stylesheets/Sass-components/Icons.scss";
 
 function Icons(props) {
-  console.log(props.icons)
+  console.log(props.palettesData);
+  const palette = props.palettesData;
+
   return (
     <footer className="card__social">
       {props.icons.map((icon, index) => {
         return (
-          <a
-            key={index}
-            className="card__icon js-card__icon js-card__icon--phone js-icon-deactivated"
-            target="_blank"
-            title={icon.title}
-            href={icon.prefix}>
-            <i className={icon.i}></i>
-          </a>
-        )
-      }
-      )}
-    </footer >
-
+          !props.formData[icon.name]
+            ? <span key={index} className="card__icon js-icon-deactivated" target="_blank" title={icon.title}><i className={icon.i}></i></span>
+            :
+            <a key={index} className="card__icon" target="_blank" title={icon.title} href={icon.prefix + props.formData[icon.name]}>
+              <i className={icon.i}></i>
+            </a>
+        );
+      })}
+    </footer>
   );
 }
-
 
 export default Icons;

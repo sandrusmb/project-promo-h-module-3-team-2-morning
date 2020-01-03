@@ -43,3 +43,59 @@
 i {
   font-size: 1.8rem;
 }
+
+// Paletas
+
+.card-container.palette1 {
+  color: $darkGreen;
+
+  .card__header {
+    border-left: 5px solid $mediumBlue;
+  }
+
+  .card__icon {
+    color: $darkGreen;
+    border: 2px solid $lightGreen;
+  }
+
+  .js-icon-deactivated {
+    color: $lightGrey;
+    cursor: auto;
+  }
+}
+
+.card-container.palette2 {
+  color: $darkRed;
+
+  .card__header {
+    border-left: 5px solid $red;
+  }
+
+  .card__icon {
+    color: $darkRed;
+    border: 2px solid $darkOrange;
+  }
+
+  .js-icon-deactivated {
+    color: $lightGrey;
+    cursor: auto;
+  }
+}
+
+.card-container.palette3 {
+  color: $bluishGray;
+
+  .card__header {
+    border-left: 5px solid $yellowishBeige;
+  }
+
+  .card__icon {
+    color: $bluishGray;
+    border: 2px solid $lightBlue;
+  }
+
+  .js-icon-deactivated {
+    color: $lightGrey;
+    cursor: auto;
+  }
+}
