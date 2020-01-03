@@ -20,12 +20,35 @@
   margin: 0 0.5rem 0 0.5rem;
 }
 
+.card__icon__deactivated {
+  height: 3.2rem;
+  width: 3.2rem;
+  border: $brownishGrey solid 0.2rem;
+  border-radius: 1.6rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 0.5rem 0 0.5rem;
+
+  .far,
+  .fas,
+  .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    color: $lightGrey;
+  }
+}
+
 .icon__palette1 {
   color: $darkGreen;
   border: 2px solid $lightGreen;
 
   .far,
-  .fas {
+  .fas,
+  .fab {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +62,8 @@
   border: 2px solid $darkOrange;
 
   .far,
-  .fas {
+  .fas,
+  .fab {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +77,8 @@
   border: 2px solid $lightBlue;
 
   .far,
-  .fas {
+  .fas,
+  .fab {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,14 +86,3 @@
     color: $bluishGray;
   }
 }
-
-
-
-// .fas {
-//   text-align: center;
-//   font-size: 2.24rem;
-//   height: 2.6rem;
-//   width: 3.2rem;
-//   color: $mediumOrange;
-//   margin-top: 1.5rem;
-// }

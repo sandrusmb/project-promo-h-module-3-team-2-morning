@@ -10,9 +10,9 @@ function Icons(props) {
       {props.icons.map((icon, index) => {
         return (
           !props.formData[icon.name]
-            ? <span key={index} className="icon__palette1 card__icon js-icon-deactivated" target="_blank" title={icon.title}><i className={icon.i}></i></span>
+            ? <span key={index} className="card__icon__deactivated" target="_blank" title={icon.title}><i className={icon.i}></i></span>
             :
-            <a key={index} className="card__icon" target="_blank" title={icon.title} href={icon.prefix + props.formData[icon.name]}>
+            <a key={index} className="card__icon icon__palette3" target="_blank" title={icon.title} href={icon.prefix + props.formData[icon.name]}>
               <i className={icon.i}></i>
             </a>
         );
