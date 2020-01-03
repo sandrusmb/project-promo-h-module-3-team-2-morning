@@ -24,7 +24,8 @@ class Form extends React.Component {
             <form className="form">
                 <section className="collapsable-box design">
                     <Collapsable icons={data[0].icon} names={data[0].name} />
-                    <Design />
+                    <Design
+                        handlePalette={this.props.handlePalette} />
                 </section>
 
                 <section className="collapsable-box fill hidden">

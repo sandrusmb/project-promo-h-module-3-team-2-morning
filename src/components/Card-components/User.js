@@ -9,6 +9,7 @@ class User extends React.Component {
     console.log(this.props);
     const name = this.props.formData.name;
     const job = this.props.formData.job;
+
     return (
       <div className="user-details">
         <header className="card__header js-card__header">

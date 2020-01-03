@@ -28,7 +28,7 @@ class Design extends React.Component {
                 color1={paleta.colors.color1}
                 color2={paleta.colors.color2}
                 color3={paleta.colors.color3}
-              />
+                handlePalette={this.props.handlePalette} />
             );
           })}
         </DesignPalettes>

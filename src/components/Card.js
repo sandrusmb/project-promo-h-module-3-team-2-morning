@@ -15,14 +15,22 @@ class Card extends React.Component {
   }
 
   render() {
+    console.log(this.props.palettesData);
     return (
       <section className="card">
         <div className="card__wrapper">
           <Reset />
           <article className="card-container js-card-container">
-            <User formData={this.props.formData} />
+            <User
+              formData={this.props.formData}
+              paletteData={this.props.palettesData}
+            />
             <Photo />
-            <IconsCard icons={this.state.icons} formData={this.props.formData} />
+            <IconsCard
+              icons={this.state.icons}
+              formData={this.props.formData}
+              paletteData={this.props.palettesData}
+            />
           </article>
         </div>
       </section>
