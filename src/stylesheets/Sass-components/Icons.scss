@@ -23,27 +23,46 @@
 .icon__palette1 {
   color: $darkGreen;
   border: 2px solid $lightGreen;
-}
 
+  .far,
+  .fas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    color: $darkGreen;
+  }
+}
 
 .icon__palette2 {
   color: $darkRed;
   border: 2px solid $darkOrange;
+
+  .far,
+  .fas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    color: $darkRed;
+  }
 }
 
 .icon__palette3 {
   color: $bluishGray;
   border: 2px solid $lightBlue;
+
+  .far,
+  .fas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    color: $bluishGray;
+  }
 }
 
-// .far {
-//   text-align: center;
-//   height: 2.6rem;
-//   width: 3.2rem;
-//   font-size: 2.24rem;
-//   color: $mediumOrange;
-//   margin-top: 1.5rem;
-// }
+
 
 // .fas {
 //   text-align: center;
