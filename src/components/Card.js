@@ -20,16 +20,16 @@ class Card extends React.Component {
       <section className="card">
         <div className="card__wrapper">
           <Reset />
-          <article className="card-container js-card-container">
+          <article className="card-container">
             <User
               formData={this.props.formData}
-              paletteData={this.props.palettesData}
+              palettesData={this.props.palettesData}
             />
             <Photo />
             <IconsCard
               icons={this.state.icons}
               formData={this.props.formData}
-              paletteData={this.props.palettesData}
+              palettesData={this.props.palettesData}
             />
           </article>
         </div>

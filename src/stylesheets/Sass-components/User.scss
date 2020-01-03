@@ -1,4 +1,5 @@
 @import "../Core/variables.scss";
+
 .user-details {
   padding: 0;
   margin: 0;
@@ -22,4 +23,28 @@
   color: $grey;
   font-size: 1.6rem;
   line-height: 1.25;
+}
+
+.user__palette1 {
+  color: $darkGreen;
+
+  .card__header {
+    border-left: 5px solid $mediumBlue;
+  }
+}
+
+.user__palette2 {
+  color: $darkRed;
+
+  .card__header {
+    border-left: 5px solid $red;
+  }
+}
+
+.user__palette3 {
+  color: $bluishGray;
+
+  .card__header {
+    border-left: 5px solid $yellowishBeige;
+  }
 }

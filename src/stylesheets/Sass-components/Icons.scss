@@ -20,6 +20,22 @@
   margin: 0 0.5rem 0 0.5rem;
 }
 
+.icon__palette1 {
+  color: $darkGreen;
+  border: 2px solid $lightGreen;
+}
+
+
+.icon__palette2 {
+  color: $darkRed;
+  border: 2px solid $darkOrange;
+}
+
+.icon__palette3 {
+  color: $bluishGray;
+  border: 2px solid $lightBlue;
+}
+
 // .far {
 //   text-align: center;
 //   height: 2.6rem;
