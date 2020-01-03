@@ -3,7 +3,13 @@ import React from "react";
 class DesignPalette extends React.Component {
   constructor(props) {
     super(props);
+    // this.handlePalette = this.handlePalette.bind(this);
   }
+
+  // handlePalette(event) {
+  //   let checked = event.target.value;
+  //   this.props.handlePalette(checked);
+  // }
 
   render() {
     return (
@@ -21,6 +27,7 @@ class DesignPalette extends React.Component {
                 name={this.props.name}
                 className="palette-container__input"
                 defaultChecked={this.props.defaultChecked}
+              // onClick={this.handlePalette}
               />
               <div className="palette">
                 <div className={this.props.color1}></div>

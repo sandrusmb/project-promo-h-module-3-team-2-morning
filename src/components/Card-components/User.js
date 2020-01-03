@@ -7,12 +7,13 @@ class User extends React.Component {
   }
   render() {
     console.log(this.props);
-
+    const name = this.props.formData.name;
+    const job = this.props.formData.job;
     return (
       <div className="user-details">
         <header className="card__header js-card__header">
-          <h1 className="card__name js-card__name">{this.props.formData.name !== "" ? this.props.formData.name : "Nombre Apellido"}</h1>
-          <h2 className="card__role js-card__role">{this.props.formData.job}</h2>
+          <h1 className="card__name js-card__name">{!name ? "Nombre Apellido" : name}</h1>
+          <h2 className="card__role js-card__role">{!job ? "Front-end Developer" : job}</h2>
         </header>
       </div>
     );

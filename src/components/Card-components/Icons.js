@@ -8,9 +8,12 @@ function Icons(props) {
     <footer className="card__social">
       {props.icons.map((icon, index) => {
         return (
-          <a key={index} className="card__icon js-card__icon js-card__icon--phone js-icon-deactivated" target="_blank" title={icon.title} href={icon.prefix + props.formData.phone}>
-            <i className={icon.i}></i>
-          </a>
+          !props.formData[icon.name]
+            ? <span key={index} className="card__icon js-card__icon js-card__icon--phone js-icon-deactivated" target="_blank" title={icon.title}><i className={icon.i}></i></span>
+            :
+            <a key={index} className="card__icon js-card__icon js-card__icon--phone js-icon-deactivated" target="_blank" title={icon.title} href={icon.prefix + props.formData[icon.name]}>
+              <i className={icon.i}></i>
+            </a>
         );
       })}
     </footer>

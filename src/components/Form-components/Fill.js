@@ -3,6 +3,15 @@ import "../../stylesheets/Sass-components/Fill.scss";
 // Esta clase de scss se debe de poner en Fill scss
 import "../../stylesheets/Sass-components/FillForm.scss";
 
+// function Fill (props) {
+//   function handleInput(ev) {
+//     props.handleInput(...)
+//   }
+//   return (
+//     <div onClick={handleInput}>hola mundo</div>
+//   )
+// }
+
 class Fill extends React.Component {
   constructor(props) {
     super(props);

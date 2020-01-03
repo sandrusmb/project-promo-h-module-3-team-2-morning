@@ -1,26 +1,29 @@
-[
-  {
+[{
     "title": "Contacta por teléfono",
     "js": "js-card__icon--phone",
     "i": "fas fa-mobile-alt",
-    "prefix": "tel:+"
+    "prefix": "tel:+",
+    "name": "phone"
   },
   {
     "title": "Escríbeme por email",
     "js": "js-card__icon--email",
     "i": "far fa-envelope",
-    "prefix": "mailto:"
+    "prefix": "mailto:",
+    "name": "email"
   },
   {
     "title": "Añádeme a tu red de Linkedin",
     "js": "js-card__icon--linkedin",
     "i": "fab fa-linkedin-in",
-    "prefix": "https://www.linkedin.com/in/"
+    "prefix": "https://www.linkedin.com/in/",
+    "name": "linkedin"
   },
   {
     "title": "Visita mi portfolio de Github",
     "js": "js-card__icon--github",
     "i": "fab fa-github-alt",
-    "prefix": "https://www.github.com/"
+    "prefix": "https://www.github.com/",
+    "name": "github"
   }
 ]
