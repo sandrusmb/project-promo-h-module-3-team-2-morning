@@ -21,7 +21,6 @@ class App extends React.Component {
 
   handleInput(data) {
     // console.log(data.id);
-
     this.setState({ [data.id]: data.inputValue });
   }
   render() {
@@ -30,7 +29,9 @@ class App extends React.Component {
       <div>
         <Header />
         <main className="main">
-          <Card formData={this.state} palettesData={this.state.data} />
+          <Card
+            formData={this.state}
+            palettesData={this.state.data} />
           <Form
             handleInput={this.handleInput}
             handlePalette={this.handlePalette}
