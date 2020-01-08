@@ -4,7 +4,7 @@ import User from "./Card-components/User";
 import Photo from "./Card-components/Photo";
 import IconsCard from "./Card-components/Icons";
 import "../stylesheets/Sass-components/Card.scss";
-import iconsApi from "../api/iconsApi.json";
+import iconsApi from "../api/IconsApi.json";
 
 class Card extends React.Component {
   constructor(props) {

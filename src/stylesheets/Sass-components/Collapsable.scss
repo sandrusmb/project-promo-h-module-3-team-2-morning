@@ -23,6 +23,7 @@
 
 .arrow {
   transition: transform ease 1s;
+
   &:hover {
     transform: translateY(-50%) rotate(-180deg);
   }

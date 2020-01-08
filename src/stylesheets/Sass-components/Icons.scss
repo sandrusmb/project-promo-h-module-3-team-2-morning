@@ -7,49 +7,106 @@
   height: 5.6rem;
 }
 
-.card__icon {
+// .card__icon {
+//   height: 3.2rem;
+//   width: 3.2rem;
+//   border: $lightGreen solid 0.2rem;
+//   border-radius: 1.6rem;
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   justify-content: center;
+//   color: $darkGreen;
+//   margin: 0 0.5rem 0 0.5rem;
+// }
+
+.card__icon__deactivated {
   height: 3.2rem;
   width: 3.2rem;
-  border: $lightGreen solid 0.2rem;
+  border: $brownishGrey solid 0.2rem;
   border-radius: 1.6rem;
   display: flex;
   align-items: center;
   text-decoration: none;
   justify-content: center;
-  color: $darkGreen;
   margin: 0 0.5rem 0 0.5rem;
+
+  .far,
+  .fas,
+  .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    color: $lightGrey;
+  }
 }
 
 .icon__palette1 {
   color: $darkGreen;
   border: 2px solid $lightGreen;
-}
+  border-radius: 1.6rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 0.5rem 0 0.5rem;
 
+  .far,
+  .fas,
+  .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    color: $darkGreen;
+  }
+}
 
 .icon__palette2 {
   color: $darkRed;
   border: 2px solid $darkOrange;
+  border-radius: 1.6rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 0.5rem 0 0.5rem;
+
+  .far,
+  .fas,
+  .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    color: $darkRed;
+  }
 }
 
 .icon__palette3 {
   color: $bluishGray;
   border: 2px solid $lightBlue;
+  border-radius: 1.6rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 0.5rem 0 0.5rem;
+
+  .far,
+  .fas,
+  .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    color: $bluishGray;
+  }
 }
-
-// .far {
-//   text-align: center;
-//   height: 2.6rem;
-//   width: 3.2rem;
-//   font-size: 2.24rem;
-//   color: $mediumOrange;
-//   margin-top: 1.5rem;
-// }
-
-// .fas {
-//   text-align: center;
-//   font-size: 2.24rem;
-//   height: 2.6rem;
-//   width: 3.2rem;
-//   color: $mediumOrange;
-//   margin-top: 1.5rem;
-// }
