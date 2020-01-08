@@ -4,7 +4,8 @@ import User from "./Card-components/User";
 import Photo from "./Card-components/Photo";
 import IconsCard from "./Card-components/Icons";
 import "../stylesheets/Sass-components/Card.scss";
-import iconsApi from "../api/iconsApi.json";
+
+import iconsApi from "../api/iconsapi.json";
 
 class Card extends React.Component {
   constructor(props) {
@@ -21,16 +22,9 @@ class Card extends React.Component {
         <div className="card__wrapper">
           <Reset />
           <article className="card-container">
-            <User
-              formData={this.props.formData}
-              palettesData={this.props.palettesData}
-            />
+            <User formData={this.props.formData} palettesData={this.props.palettesData} />
             <Photo />
-            <IconsCard
-              icons={this.state.icons}
-              formData={this.props.formData}
-              palettesData={this.props.palettesData}
-            />
+            <IconsCard icons={this.state.icons} formData={this.props.formData} palettesData={this.props.palettesData} />
           </article>
         </div>
       </section>
