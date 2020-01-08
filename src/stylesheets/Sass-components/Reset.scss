@@ -11,18 +11,25 @@
   font-family: $opensans;
   color: $grey;
   font-size: 1.2rem;
-  line-height: 1.67;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 
   align-self: flex-start;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.reset-title {
+  font-size: 1.2rem;
+
 }
 
 .fa-trash-alt {
   font-size: 1.2rem;
-  margin-right: 0.8rem;
+  // line-height: 2rem;
+  // margin-right: 0.8rem;
+  color: $grey;
+
 }
