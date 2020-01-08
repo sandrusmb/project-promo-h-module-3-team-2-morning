@@ -17,7 +17,16 @@ class Fill extends React.Component {
     super(props);
     this.fileInput = React.createRef();
     this.handleInput = this.handleInput.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleImage() {
+    const fr = new FileReader();
+    const myFile = ev.target.files[0];
+    fr.onload = () => {
+      this.props.handleInput({
+        inputName:
+  })
+    }
   }
 
   handleInput(ev) {
@@ -26,9 +35,9 @@ class Fill extends React.Component {
       inputValue: ev.target.value
     });
   }
-  handleSubmit(event) {
+  handleClick(event) {
     event.preventDefault();
-    alert(`Selected file - ${this.fileInput.current.files[0].name}`);
+    this.fileInput.current.click();
   }
 
   render() {
@@ -46,8 +55,8 @@ class Fill extends React.Component {
           Imagen de perfil
         </label>
         <div className="form__input--img">
-          <input type="file" className="js__profile-upload-btn form__file" name="photo" id="img-selector" accept="image/*" ref={this.fileInput} />
-          <button htmlFor=" file" className="js__profile-trigger form__file--label" onSubmit={this.handleSubmit}>
+          <input type="file" className="js__profile-upload-btn form__file" name="photo" id="img-selector" accept="image/*" ref={this.fileInput} onChange={this.handleImage} />
+          <button htmlFor=" file" className="js__profile-trigger form__file--label" onClick={this.handleClick}>
             Añadir imagen
           </button>
           <div className="js__profile-preview form__input--miniature"></div>
