@@ -15,7 +15,9 @@ import "../../stylesheets/Sass-components/FillForm.scss";
 class Fill extends React.Component {
   constructor(props) {
     super(props);
+    this.fileInput = React.createRef();
     this.handleInput = this.handleInput.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleInput(ev) {
@@ -23,6 +25,10 @@ class Fill extends React.Component {
       id: ev.target.id,
       inputValue: ev.target.value
     });
+  }
+  handleSubmit(event) {
+    event.preventDefault();
+    alert(`Selected file - ${this.fileInput.current.files[0].name}`);
   }
 
   render() {
@@ -40,8 +46,8 @@ class Fill extends React.Component {
           Imagen de perfil
         </label>
         <div className="form__input--img">
-          <input type="file" className="js__profile-upload-btn form__file" name="photo" id="img-selector" accept="image/*" />
-          <button htmlFor=" file" className="js__profile-trigger form__file--label">
+          <input type="file" className="js__profile-upload-btn form__file" name="photo" id="img-selector" accept="image/*" ref={this.fileInput} />
+          <button htmlFor=" file" className="js__profile-trigger form__file--label" onSubmit={this.handleSubmit}>
             Añadir imagen
           </button>
           <div className="js__profile-preview form__input--miniature"></div>
