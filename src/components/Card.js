@@ -20,7 +20,7 @@ class Card extends React.Component {
     return (
       <section className="card">
         <div className="card__wrapper">
-          <Reset />
+          <Reset resetData={this.props.resetData} />
           <article className="card-container">
             <User formData={this.props.formData} palettesData={this.props.palettesData} />
             <Photo />

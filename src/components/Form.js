@@ -25,11 +25,13 @@ class Form extends React.Component {
 
                 <Collapsable icons={data[0].icon} names={data[0].name}>
                     <Design
+                        // resetData={this.resetData}
                         handlePalette={this.props.handlePalette} />
                 </Collapsable>
 
                 <Collapsable icons={data[1].icon} names={data[1].name} >
                     <Fill
+                        // resetData={this.resetData}
                         handleInput={this.props.handleInput} />
                 </Collapsable>
 
