@@ -5,11 +5,11 @@
   margin: 0;
 }
 
-.card__header {
-  border-left: 5px solid $mediumBlue;
-  margin: 2.1rem 1.4rem 1rem 0rem;
-  padding-left: 1.5rem;
-}
+// .card__header {
+//   border-left: 5px solid $mediumBlue;
+//   margin: 2.1rem 1.4rem 1rem 0rem;
+//   padding-left: 1.5rem;
+// }
 
 .card__name {
   font-family: $montserrat;
@@ -27,24 +27,21 @@
 
 .user__palette1 {
   color: $darkGreen;
-
-  .card__header {
-    border-left: 5px solid $mediumBlue;
-  }
+  border-left: 5px solid $mediumBlue;
+  margin: 2.1rem 1.4rem 1rem 0rem;
+  padding-left: 1.5rem;
 }
 
 .user__palette2 {
   color: $darkRed;
-
-  .card__header {
-    border-left: 5px solid $red;
-  }
+  border-left: 5px solid $red;
+  margin: 2.1rem 1.4rem 1rem 0rem;
+  padding-left: 1.5rem;
 }
 
 .user__palette3 {
   color: $bluishGray;
-
-  .card__header {
-    border-left: 5px solid $yellowishBeige;
-  }
+  border-left: 5px solid $yellowishBeige;
+  margin: 2.1rem 1.4rem 1rem 0rem;
+  padding-left: 1.5rem;
 }
