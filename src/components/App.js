@@ -1,10 +1,12 @@
 import React from "react";
 import "../stylesheets/App.scss";
+import { Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Card from "./Card";
 import Form from "./Form";
 import Footer from "./Footer";
 import LocalStorage from "../localStorage/localstorage";
+import HeaderLanding from "./HeaderLanding";
 
 class App extends React.Component {
   constructor(props) {
@@ -27,11 +29,9 @@ class App extends React.Component {
     this.resetData = this.resetData.bind(this);
   }
   handlePalette(data) {
-
     this.setState({ data });
   }
   handleInput(data) {
-
     this.setState({ [data.id]: data.inputValue });
   }
 
@@ -61,21 +61,22 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header />
-        <main className="main">
-          <Card
-            formData={this.state}
-            palettesData={this.state.data}
-            resetData={this.resetData}
+        <Switch>
+          <Route exact path="/" component={HeaderLanding} />
+          <Route
+            path="/card"
+            render={() => (
+              <>
+                <Header />
+                <main className="main">
+                  <Card formData={this.state} palettesData={this.state.data} resetData={this.resetData} />
+                  <Form handleInput={this.handleInput} handlePalette={this.handlePalette} file={this.state.file} formData={this.state} palettesData={this.state.data} />
+                </main>
+              </>
+            )}
           />
-          <Form
-            handleInput={this.handleInput}
-            handlePalette={this.handlePalette}
-            file={this.state.file}
-            formData={this.state}
-            palettesData={this.state.data}
-          />
-        </main>
+        </Switch>
+
         <Footer />
       </div>
     );
