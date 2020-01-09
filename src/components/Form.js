@@ -19,6 +19,7 @@ class Form extends React.Component {
 
     render() {
         const data = this.state.collapsable;
+        console.log(this.props.palettesData)
         return (
             <form className="form">
 

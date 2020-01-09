@@ -13,6 +13,7 @@ class App extends React.Component {
     this.state = {
       name: "",
       job: "",
+      file: "",
       phone: "",
       email: "",
       linkedin: "",
@@ -36,15 +37,17 @@ class App extends React.Component {
     this.setState({
       name: "",
       job: "",
+      file: "",
       phone: "",
       email: "",
       linkedin: "",
       github: "",
-      palette: 1
+      data: 1
     });
   }
 
   render() {
+    console.log(this.state.data)
     return (
       <div>
         <Switch>
