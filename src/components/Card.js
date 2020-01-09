@@ -14,7 +14,7 @@ function Card(props) {
         <Reset resetData={props.resetData} />
         <article className="card-container">
           <User formData={props.formData} palettesData={props.palettesData} />
-          <Photo />
+          <Photo formData={props.formData} />
           <IconsCard icons={iconsApi} formData={props.formData} palettesData={props.palettesData} />
         </article>
       </div>
