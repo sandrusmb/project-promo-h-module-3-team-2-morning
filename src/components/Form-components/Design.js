@@ -10,7 +10,6 @@ class Design extends React.Component {
     this.state = { data: api };
   }
   render() {
-    console.log(this.props.palettesData)
     return (
       <section className="collapsable-box design">
 

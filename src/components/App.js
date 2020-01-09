@@ -51,13 +51,9 @@ class App extends React.Component {
     });
   }
 
-
-
-
   componentDidUpdate() {
     LocalStorage.set('user', this.state);
   }
-
 
   render() {
     return (

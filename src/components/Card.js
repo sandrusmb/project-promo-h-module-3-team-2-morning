@@ -7,7 +7,6 @@ import "../stylesheets/Sass-components/Card.scss";
 import iconsApi from "../api/iconsapi.json";
 
 function Card(props) {
-  console.log(props.palettesData);
   return (
     <section className="card">
       <div className="card__wrapper">
