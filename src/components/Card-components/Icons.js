@@ -2,7 +2,7 @@ import React from "react";
 import "../../stylesheets/Sass-components/Icons.scss";
 
 function Icons(props) {
-  console.log(props.palettesData);
+  // console.log(props.palettesData);
   const palettes = props.palettesData;
 
   return (

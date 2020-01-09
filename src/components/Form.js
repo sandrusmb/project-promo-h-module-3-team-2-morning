@@ -30,8 +30,8 @@ class Form extends React.Component {
 
                 <Collapsable icons={data[1].icon} names={data[1].name} >
                     <Fill
-                        formData={this.props.formData}
-                        handleInput={this.props.handleInput} />
+                        handleInput={this.props.handleInput} file={this.props.file}
+                        formData={this.props.formData} />
                 </Collapsable>
 
                 <Collapsable icons={data[2].icon} names={data[2].name} >

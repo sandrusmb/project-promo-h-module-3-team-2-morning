@@ -15,6 +15,7 @@ class App extends React.Component {
       email: "",
       linkedin: "",
       github: "",
+      file: "",
       data: 1
     };
     this.handleInput = this.handleInput.bind(this);
@@ -22,12 +23,11 @@ class App extends React.Component {
     this.resetData = this.resetData.bind(this);
   }
   handlePalette(data) {
-    console.log(data);
+
     this.setState({ data });
   }
-
   handleInput(data) {
-    // console.log(data.id);
+
     this.setState({ [data.id]: data.inputValue });
   }
 
@@ -45,7 +45,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div>
         <Header />
@@ -58,6 +57,7 @@ class App extends React.Component {
           <Form
             handleInput={this.handleInput}
             handlePalette={this.handlePalette}
+            file={this.state.file}
             formData={this.state}
             palettesData={this.state.data}
           />
