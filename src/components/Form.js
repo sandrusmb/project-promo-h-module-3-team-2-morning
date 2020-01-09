@@ -18,6 +18,8 @@ class Form extends React.Component {
 
 
     render() {
+        console.log(this.props.formData);
+
         const data = this.state.collapsable;
         return (
             <form className="form">
