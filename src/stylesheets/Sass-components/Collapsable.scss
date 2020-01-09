@@ -21,13 +21,13 @@
   }
 }
 
-.arrow {
-  transition: transform ease 1s;
+// .arrow {
+//   transition: transform ease 1s;
 
-  &:hover {
-    transform: translateY(-50%) rotate(-180deg);
-  }
-}
+//   &:hover {
+//     transform: translateY(-50%) rotate(-180deg);
+//   }
+// }
 
 .collapsable-box__header {
   cursor: pointer;
@@ -38,6 +38,35 @@
   width: 1.6rem;
   height: 1.8rem;
   color: $grey;
+}
+
+
+.hidden {
+  .collapsable-content {
+    display: none;
+  }
+}
+
+.arrow {
+  transition: transform ease 1s;
+
+  &:hover {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+}
+
+.hidden .arrow-down {
+  transform: translateY(-50%) rotate(-180deg);
+  margin-top: 1.5rem;
+}
+
+
+
+.open {
+  .collapsable-content {
+    border-bottom: 1px solid transparent;
+    // display: block;
+  }
 }
 
 // .far {
@@ -60,8 +89,4 @@
 // .hidden .arrow {
 //   transform: translateY(-50%) rotate(-180deg);
 //   margin-top: 1.5rem;
-// }
-
-// .hidden .collapsable-content {
-//     display: none;
 // }

@@ -9,31 +9,40 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: 1
+      data: 1,
+      file: ''
     };
     this.handleInput = this.handleInput.bind(this);
     this.handlePalette = this.handlePalette.bind(this);
+    this.handleImage = this.handleImage.bind(this);
   }
   handlePalette(data) {
-    console.log(data);
+
     this.setState({ data });
   }
-
   handleInput(data) {
-    // console.log(data.id);
 
-    this.setState({ [data.id]: data.inputValue });
+    this.setState({ [data.name]: data.value });
+  }
+
+  handleImage(data) {
+    console.log(data);
+    this.setState({ [data.name]: data.value });
   }
   render() {
-    console.log(this.state);
+    console.log(this.state.file);
     return (
       <div>
         <Header />
         <main className="main">
-          <Card formData={this.state} palettesData={this.state.data} />
+          <Card
+            formData={this.state}
+            palettesData={this.state.data} />
           <Form
             handleInput={this.handleInput}
             handlePalette={this.handlePalette}
+            handleImage={this.handleImage}
+            file={this.state.file}
           />
         </main>
         <Footer />

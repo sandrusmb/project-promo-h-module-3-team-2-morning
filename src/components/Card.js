@@ -4,6 +4,7 @@ import User from "./Card-components/User";
 import Photo from "./Card-components/Photo";
 import IconsCard from "./Card-components/Icons";
 import "../stylesheets/Sass-components/Card.scss";
+
 import iconsApi from "../api/iconsapi.json";
 
 class Card extends React.Component {
@@ -15,7 +16,7 @@ class Card extends React.Component {
   }
 
   render() {
-    console.log(this.props.palettesData);
+    // console.log(this.props.palettesData);
     return (
       <section className="card">
         <div className="card__wrapper">

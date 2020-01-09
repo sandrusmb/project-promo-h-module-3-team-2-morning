@@ -19,27 +19,25 @@ class Form extends React.Component {
 
     render() {
         const data = this.state.collapsable;
+        console.log(this.props);
 
         return (
             <form className="form">
-                <section className="collapsable-box design">
-                    <Collapsable icons={data[0].icon} names={data[0].name} />
+
+                <Collapsable icons={data[0].icon} names={data[0].name}>
                     <Design
                         handlePalette={this.props.handlePalette} />
-                </section>
+                </Collapsable>
 
-                <section className="collapsable-box fill hidden">
-                    <Collapsable icons={data[1].icon} names={data[1].name} />
+                <Collapsable icons={data[1].icon} names={data[1].name} >
                     <Fill
-                        handleInput={this.props.handleInput}
-                    />
-                </section>
+                        handleInput={this.props.handleInput} handleImage={this.props.handleImage} file={this.props.file} />
+                </Collapsable>
 
-                <section className="collapsable-box hidden">
-                    <Collapsable icons={data[2].icon} names={data[2].name} />
+                <Collapsable icons={data[2].icon} names={data[2].name} >
                     <Share />
-                </section>
-            </form>
+                </Collapsable>
+            </form >
         );
     }
 }
