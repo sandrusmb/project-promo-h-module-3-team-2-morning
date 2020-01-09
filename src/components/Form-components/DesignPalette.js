@@ -11,7 +11,6 @@ class DesignPalette extends React.Component {
     console.log(this.props)
     this.props.handlePalette(checked);
   }
-
   render() {
     return (
       <React.Fragment>
@@ -29,6 +28,7 @@ class DesignPalette extends React.Component {
                 className="palette-container__input"
                 defaultChecked={this.props.defaultChecked}
                 onChange={this.handlePalette}
+
               />
               <div className="palette">
                 <div className={this.props.color1}></div>
