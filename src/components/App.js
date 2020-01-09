@@ -12,10 +12,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     const localStorageData = LocalStorage.get('user', {
-
       name: "",
       job: "",
-      file: "",
       phone: "",
       email: "",
       linkedin: "",
@@ -30,7 +28,7 @@ class App extends React.Component {
     this.resetData = this.resetData.bind(this);
   }
   handlePalette(data) {
-    this.setState({ data });
+    this.setState({ palette: data });
   }
   handleInput(data) {
     this.setState({ [data.id]: data.inputValue });
@@ -46,7 +44,6 @@ class App extends React.Component {
       email: "",
       linkedin: "",
       github: "",
-      file: "",
       palette: 1
     });
   }
@@ -66,8 +63,8 @@ class App extends React.Component {
               <>
                 <Header />
                 <main className="main">
-                  <Card formData={this.state} palettesData={this.state.data} resetData={this.resetData} />
-                  <Form handleInput={this.handleInput} handlePalette={this.handlePalette} file={this.state.file} formData={this.state} palettesData={this.state.data} />
+                  <Card formData={this.state} palettesData={this.state.palette} resetData={this.resetData} />
+                  <Form handleInput={this.handleInput} handlePalette={this.handlePalette} file={this.state.file} formData={this.state} palettesData={this.state.palette} />
                 </main>
               </>
             )}

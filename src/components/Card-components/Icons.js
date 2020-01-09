@@ -19,16 +19,17 @@ function Icons(props) {
             <i className={icon.i}></i>
           </span>
         ) : (
-          <a
-            key={index} /* className="icon__palette2"  */
-            className={`icon__palette${palettes}`}
-            target="_blank"
-            title={icon.title}
-            href={icon.prefix + props.formData[icon.name]}
-          >
-            <i className={icon.i}></i>
-          </a>
-        );
+            <a
+              key={index} /* className="icon__palette2"  */
+              className={`icon__palette${palettes}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={icon.title}
+              href={icon.prefix + props.formData[icon.name]}
+            >
+              <i className={icon.i}></i>
+            </a>
+          );
       })}
     </footer>
   );
