@@ -5,12 +5,14 @@ import Header from "./Header";
 import Card from "./Card";
 import Form from "./Form";
 import Footer from "./Footer";
+import LocalStorage from "../localStorage/localstorage";
 import HeaderLanding from "./HeaderLanding";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
+    const localStorageData = LocalStorage.get('user', {
+
       name: "",
       job: "",
       file: "",
@@ -19,8 +21,10 @@ class App extends React.Component {
       linkedin: "",
       github: "",
       file: "",
-      data: 1
-    };
+      palette: 1,
+    })
+
+    this.state = localStorageData;
     this.handleInput = this.handleInput.bind(this);
     this.handlePalette = this.handlePalette.bind(this);
     this.resetData = this.resetData.bind(this);
@@ -42,12 +46,20 @@ class App extends React.Component {
       email: "",
       linkedin: "",
       github: "",
-      data: 1
+      file: "",
+      palette: 1
     });
   }
 
+
+
+
+  componentDidUpdate() {
+    LocalStorage.set('user', this.state);
+  }
+
+
   render() {
-    console.log(this.state.data)
     return (
       <div>
         <Switch>
