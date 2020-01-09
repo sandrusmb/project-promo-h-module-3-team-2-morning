@@ -23,7 +23,7 @@ class Card extends React.Component {
           <Reset />
           <article className="card-container">
             <User formData={this.props.formData} palettesData={this.props.palettesData} />
-            <Photo />
+            <Photo formData={this.props.formData} />
             <IconsCard icons={this.state.icons} formData={this.props.formData} palettesData={this.props.palettesData} />
           </article>
         </div>

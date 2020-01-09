@@ -14,7 +14,6 @@ class App extends React.Component {
     };
     this.handleInput = this.handleInput.bind(this);
     this.handlePalette = this.handlePalette.bind(this);
-    this.handleImage = this.handleImage.bind(this);
   }
   handlePalette(data) {
 
@@ -22,15 +21,9 @@ class App extends React.Component {
   }
   handleInput(data) {
 
-    this.setState({ [data.name]: data.value });
-  }
-
-  handleImage(data) {
-    console.log(data);
-    this.setState({ [data.name]: data.value });
+    this.setState({ [data.id]: data.inputValue });
   }
   render() {
-    console.log(this.state.file);
     return (
       <div>
         <Header />
@@ -41,7 +34,6 @@ class App extends React.Component {
           <Form
             handleInput={this.handleInput}
             handlePalette={this.handlePalette}
-            handleImage={this.handleImage}
             file={this.state.file}
           />
         </main>
