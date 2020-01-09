@@ -24,11 +24,10 @@ class App extends React.Component {
     this.resetData = this.resetData.bind(this);
   }
   handlePalette(data) {
-
     this.setState({ data });
   }
-  handleInput(data) {
 
+  handleInput(data) {
     this.setState({ [data.id]: data.inputValue });
   }
 
@@ -42,7 +41,7 @@ class App extends React.Component {
       email: "",
       linkedin: "",
       github: "",
-      palette: 1
+      data: 1
     });
   }
 
