@@ -58,7 +58,8 @@ class App extends React.Component {
           <Form
             handleInput={this.handleInput}
             handlePalette={this.handlePalette}
-          // resetData={this.resetData}
+            formData={this.state}
+            palettesData={this.state.data}
           />
         </main>
         <Footer />

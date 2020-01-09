@@ -19,19 +19,18 @@ class Form extends React.Component {
 
     render() {
         const data = this.state.collapsable;
-
         return (
             <form className="form">
 
                 <Collapsable icons={data[0].icon} names={data[0].name}>
                     <Design
-                        // resetData={this.resetData}
+                        palettesData={this.props.palettesData}
                         handlePalette={this.props.handlePalette} />
                 </Collapsable>
 
                 <Collapsable icons={data[1].icon} names={data[1].name} >
                     <Fill
-                        // resetData={this.resetData}
+                        formData={this.props.formData}
                         handleInput={this.props.handleInput} />
                 </Collapsable>
 

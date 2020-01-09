@@ -4,31 +4,22 @@ import User from "./Card-components/User";
 import Photo from "./Card-components/Photo";
 import IconsCard from "./Card-components/Icons";
 import "../stylesheets/Sass-components/Card.scss";
-
 import iconsApi from "../api/iconsapi.json";
 
-class Card extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      icons: iconsApi
-    };
-  }
-
-  render() {
-    console.log(this.props.palettesData);
-    return (
-      <section className="card">
-        <div className="card__wrapper">
-          <Reset resetData={this.props.resetData} />
-          <article className="card-container">
-            <User formData={this.props.formData} palettesData={this.props.palettesData} />
-            <Photo />
-            <IconsCard icons={this.state.icons} formData={this.props.formData} palettesData={this.props.palettesData} />
-          </article>
-        </div>
-      </section>
-    );
-  }
+function Card(props) {
+  console.log(props.palettesData);
+  return (
+    <section className="card">
+      <div className="card__wrapper">
+        <Reset resetData={props.resetData} />
+        <article className="card-container">
+          <User formData={props.formData} palettesData={props.palettesData} />
+          <Photo />
+          <IconsCard icons={iconsApi} formData={props.formData} palettesData={props.palettesData} />
+        </article>
+      </div>
+    </section>
+  );
 }
+
 export default Card;

@@ -39,6 +39,9 @@
 .hidden {
   .collapsable-content {
     display: none;
+    // overflow: hidden // visibility: hidden;
+    // opacity: 0;
+    // transition: visibility 0s 2s, opacity 2s linear;
   }
 
   .collapsible--arrow {
@@ -49,22 +52,12 @@
 .open {
   .collapsable-content {
     border-bottom: 1px solid transparent;
+    // visibility: visible;
+    // opacity: 1;
+    // transition: opacity 2s linear;
   }
 
   .collapsible--arrow {
     transform: rotate(-180deg) translateY(50%);
   }
 }
-
-// .arrow {
-//   transition: transform ease 1s;
-
-//   &:hover {
-//     transform: translateY(-50%) rotate(-180deg);
-//   }
-// }
-
-// .hidden .arrow-down {
-//   transform: translateY(-50%) rotate(-180deg);
-//   margin-top: 1.5rem;
-// }
