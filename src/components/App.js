@@ -9,11 +9,18 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: 1,
-      file: ''
+      name: "",
+      job: "",
+      phone: "",
+      email: "",
+      linkedin: "",
+      github: "",
+      file: "",
+      data: 1
     };
     this.handleInput = this.handleInput.bind(this);
     this.handlePalette = this.handlePalette.bind(this);
+    this.resetData = this.resetData.bind(this);
   }
   handlePalette(data) {
 
@@ -23,6 +30,20 @@ class App extends React.Component {
 
     this.setState({ [data.id]: data.inputValue });
   }
+
+  resetData(ev) {
+    ev.preventDefault();
+    this.setState({
+      name: "",
+      job: "",
+      phone: "",
+      email: "",
+      linkedin: "",
+      github: "",
+      palette: 1
+    });
+  }
+
   render() {
     return (
       <div>
@@ -30,11 +51,15 @@ class App extends React.Component {
         <main className="main">
           <Card
             formData={this.state}
-            palettesData={this.state.data} />
+            palettesData={this.state.data}
+            resetData={this.resetData}
+          />
           <Form
             handleInput={this.handleInput}
             handlePalette={this.handlePalette}
             file={this.state.file}
+            formData={this.state}
+            palettesData={this.state.data}
           />
         </main>
         <Footer />

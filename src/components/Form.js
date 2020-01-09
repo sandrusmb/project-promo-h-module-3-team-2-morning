@@ -19,19 +19,19 @@ class Form extends React.Component {
 
     render() {
         const data = this.state.collapsable;
-        console.log(this.props);
-
         return (
             <form className="form">
 
                 <Collapsable icons={data[0].icon} names={data[0].name}>
                     <Design
+                        palettesData={this.props.palettesData}
                         handlePalette={this.props.handlePalette} />
                 </Collapsable>
 
                 <Collapsable icons={data[1].icon} names={data[1].name} >
                     <Fill
-                        handleInput={this.props.handleInput} file={this.props.file} />
+                        handleInput={this.props.handleInput} file={this.props.file}
+                        formData={this.props.formData} />
                 </Collapsable>
 
                 <Collapsable icons={data[2].icon} names={data[2].name} >
