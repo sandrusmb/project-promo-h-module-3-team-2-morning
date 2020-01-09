@@ -1,11 +1,11 @@
 import React from "react";
 import "../../stylesheets/Sass-components/Reset.scss";
 
-function Reset() {
+function Reset(props) {
   return (
-    <div className="card__reset js-card-reset" title="Resetea los cambios">
+    <div className="card__reset js-card-reset" onClick={props.resetData} title="Resetea los cambios">
       <i className="far fa-trash-alt"></i>
-      Reset
+      <p className="reset-title">Reset</p>
     </div>
   );
 }

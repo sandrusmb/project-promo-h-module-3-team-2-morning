@@ -26,7 +26,7 @@ class Collapsable extends React.Component {
 
     render() {
         return (
-            <section className="collapsable-box">
+            <section className={`${this.state.collapsable} collapsable-box`}>
                 <header className="collapsable-box__header" onClick={this.handleClick}>
                     <div>
                         <i className={`${this.props.icons} collapsable-box__icon`}></i>
@@ -34,9 +34,9 @@ class Collapsable extends React.Component {
                             {this.props.names}
                         </h2>
                     </div>
-                    <i className="fas fa-chevron-down arrow"></i>
-                </header >
-                <div className={`${this.state.collapsable} collapsable-content`}>
+                    <i className="fas fa-chevron-down collapsible--arrow"></i>
+                </header>
+                <div className="collapsable-content">
                     {this.props.children}
                 </div>
             </section>
