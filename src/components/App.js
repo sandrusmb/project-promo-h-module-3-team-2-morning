@@ -38,8 +38,10 @@ class App extends React.Component {
   isValidated() {
 
     const { name, job, file, phone, email, linkedin, github } = this.state;
+    const emailRegex = (/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+    const phoneRegex = /[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}/;
 
-    if (name && job && file && phone && email && linkedin && github) {
+    if (name && job && file && phoneRegex.test(phone) && emailRegex.test(email) && linkedin && github) {
       return true;
 
     } else {

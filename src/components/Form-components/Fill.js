@@ -1,6 +1,4 @@
 import React from "react";
-import "../../stylesheets/Sass-components/Fill.scss";
-// Esta clase de scss se debe de poner en Fill scss
 import "../../stylesheets/Sass-components/FillForm.scss";
 
 

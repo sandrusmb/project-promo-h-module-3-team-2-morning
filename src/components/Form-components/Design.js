@@ -1,6 +1,5 @@
 import React from "react";
 import DesignPalettes from "./DesignPalettes";
-import "../../stylesheets/Sass-components/Design.scss";
 import DesignPalette from "./DesignPalette";
 import api from "../../api/data.json";
 
@@ -11,8 +10,7 @@ class Design extends React.Component {
   }
   render() {
     return (
-      <section className="collapsable-box design">
-
+      <section>
         <DesignPalettes>
           {this.state.data.map((palette, key) => {
             return (

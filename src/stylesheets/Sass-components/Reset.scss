@@ -5,7 +5,6 @@
   border-radius: 1.5rem;
   width: 7.5rem;
   height: 3rem;
-  border: 0.1rem solid $white;
   background: $white;
 
   font-family: $opensans;
@@ -17,19 +16,15 @@
 
   align-self: flex-start;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .reset-title {
   font-size: 1.2rem;
-
 }
 
-.far .fa-trash-alt {
+.fa-trash-alt {
   font-size: 1.2rem;
-  // line-height: 2rem;
-  // margin-right: 0.8rem;
   color: $grey;
-
 }
