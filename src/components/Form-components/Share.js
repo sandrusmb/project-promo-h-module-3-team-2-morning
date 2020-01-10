@@ -3,9 +3,10 @@ import ShareContent from './ShareContent';
 import '../../stylesheets/Sass-components/Share.scss'
 
 
-function Share() {
+function Share(props) {
+    console.log(props.isValidated)
     return (
-        <ShareContent />
+        <ShareContent isValidated={props.isValidated} />
     );
 }
 export default Share;

@@ -26,13 +26,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: $white;
     margin: 20px auto;
 }
 
-.js-button-active {
-    background: $mediumOrange;
+.button-active {
+    background-color: $mediumOrange;
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    margin: 20px auto;
 }
 
 .fa-address-card {
