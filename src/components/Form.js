@@ -18,6 +18,7 @@ class Form extends React.Component {
 
     render() {
         const data = this.state.collapsable;
+        console.log(this.props.isValidated)
         return (
             <form className="form">
 
@@ -34,7 +35,8 @@ class Form extends React.Component {
                 </Collapsable>
 
                 <Collapsable icons={data[2].icon} names={data[2].name} >
-                    <Share />
+                    <Share
+                        isValidated={this.props.isValidated} />
                 </Collapsable>
             </form >
         );
