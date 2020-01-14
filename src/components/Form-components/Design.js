@@ -9,10 +9,17 @@ class Design extends React.Component {
     this.state = { data: api };
   }
   render() {
+
     return (
       <section>
         <DesignPalettes>
+
+
           {this.state.data.map((palette, key) => {
+            console.log(palette.value);
+            console.log(this.props.palettesData);
+
+
             return (
               <DesignPalette
                 key={key}
@@ -21,15 +28,17 @@ class Design extends React.Component {
                 type={palette.type}
                 value={palette.value}
                 name={palette.name}
-                defaultChecked={palette.defaultChecked}
+                checked={this.props.palettesData === palette.value}
                 color1={palette.colors.color1}
                 color2={palette.colors.color2}
                 color3={palette.colors.color3}
                 handlePalette={this.props.handlePalette}
                 palettesData={this.props.palettesData}
+
               />
             );
           })}
+
         </DesignPalettes>
       </section>
     );

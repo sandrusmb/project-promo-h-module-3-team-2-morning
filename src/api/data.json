@@ -1,10 +1,11 @@
-[{
+[
+  {
     "htmlFor": "palette1",
     "id": "palette1",
     "type": "radio",
     "value": "1",
     "name": "palette",
-    "defaultChecked": "defaultChecked",
+
     "colors": {
       "color1": "palette__box--darkGreen",
       "color2": "palette__box--medGreen",
@@ -17,7 +18,7 @@
     "type": "radio",
     "value": "2",
     "name": "palette",
-    "defaultChecked": "",
+
     "colors": {
       "color1": "palette__box--darkRed",
       "color2": "palette__box--medRed",
@@ -30,7 +31,7 @@
     "type": "radio",
     "value": "3",
     "name": "palette",
-    "defaultChecked": "",
+
     "colors": {
       "color1": "palette__box--darkGray",
       "color2": "palette__box--beige",
