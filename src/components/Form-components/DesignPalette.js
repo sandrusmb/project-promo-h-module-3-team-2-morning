@@ -8,7 +8,7 @@ class DesignPalette extends React.Component {
 
   handlePalette(event) {
     let checked = event.target.value;
-    console.log(this.props)
+    // console.log(this.props)
     this.props.handlePalette(checked);
   }
   render() {
