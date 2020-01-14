@@ -12,7 +12,18 @@ class DesignPalette extends React.Component {
     this.props.handlePalette(checked);
   }
   render() {
+    console.log(this.props);
+    console.log(this.props.palettesData);
+    console.log(this.props.value);
+    console.log(this.props.checked);
+
+
+
+
+
+
     return (
+
       <React.Fragment>
         <div className="color-box__palettes">
           <div className="palette-container">
@@ -26,8 +37,9 @@ class DesignPalette extends React.Component {
                 value={this.props.value}
                 name={this.props.name}
                 className="palette-container__input"
-                defaultChecked={this.props.defaultChecked}
+                // defaultChecked={this.props.checked}
                 onChange={this.handlePalette}
+                checked={this.props.checked}
 
               />
               <div className="palette">

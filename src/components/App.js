@@ -19,7 +19,7 @@ class App extends React.Component {
       linkedin: "",
       github: "",
       file: "",
-      palette: 1,
+      palette: "1",
     })
 
     this.state = localStorageData;
@@ -59,7 +59,7 @@ class App extends React.Component {
       email: "",
       linkedin: "",
       github: "",
-      palette: 1
+      palette: "1"
     });
   }
 
