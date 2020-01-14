@@ -53,7 +53,7 @@ class Fill extends React.Component {
         </label>
         <input type="text" className="form__input js-form__input" name="job" id="job" value={job} placeholder="Ej: Front-end unicorn" required onChange={this.handleInput} />
         <label className="form__label" htmlFor="photo">
-          Imagen de perfilhandleImage
+          Imagen de perfil
         </label>
         <div className="form__input--img">
           <input type="file" className="js__profile-upload-btn form__file" name="file" id="file" accept="image/*" ref={this.fileInput} onChange={this.handleImage} value={this.props.value} />
