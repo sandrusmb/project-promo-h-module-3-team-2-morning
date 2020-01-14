@@ -19,7 +19,7 @@ class Design extends React.Component {
             console.log(palette.value);
             console.log(this.props.palettesData);
 
-
+            console.log(this.props.palettesData, palette.value);
             return (
               <DesignPalette
                 key={key}
