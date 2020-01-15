@@ -6,7 +6,7 @@ function ShareContent(props) {
     const isValidated = props.isValidated;
     console.log(props)
     return (
-        <section className="share__container collapsable-content js-content">
+        <section className="share__container collapsable-content">
             <button className={`${isValidated === true ? "button-active" : "button"}`} onClick={props.generateUrl}>
                 <i className="far fa-address-card"></i>
                 <h2 className="button__title">Crear tarjeta</h2>
@@ -15,11 +15,9 @@ function ShareContent(props) {
                 <span className="share__twitter-message"> Tu tarjeta ha sido
                     creada:
                 </span>
-                <p className="share__twitter-url">{props.url}</p>
-                <a target="_blank" href={`https://twitter.com/intent/tweet?text=${twitterText}${props.url}`}
-                    className="js-share__twitter share__twitter-button">
-                    <i className="fab fa-twitter"></i>
-                    Compartir en Twitter
+                <a href={props.url} className="share__twitter-url" target="_blank">{props.url}</a>
+                <a target="_blank" href={`https://twitter.com/intent/tweet?text=${twitterText}${props.url}`} className="share__twitter-button">
+                    <i className="fab fa-twitter"></i>Compartir en Twitter
                 </a>
             </div>
         </section>
