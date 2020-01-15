@@ -12,15 +12,6 @@ class DesignPalette extends React.Component {
     this.props.handlePalette(checked);
   }
   render() {
-    console.log(this.props);
-    console.log(this.props.palettesData);
-    console.log(this.props.value);
-    console.log(this.props.checked);
-
-
-
-
-
 
     return (
 

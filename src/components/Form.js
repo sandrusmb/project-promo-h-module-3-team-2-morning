@@ -36,7 +36,7 @@ class Form extends React.Component {
 
                 <Collapsable icons={data[2].icon} names={data[2].name} >
                     <Share
-                        isValidated={this.props.isValidated} />
+                        isValidated={this.props.isValidated} generateUrl={this.props.generateUrl} url={this.props.formData.url}/>
                 </Collapsable>
             </form >
         );

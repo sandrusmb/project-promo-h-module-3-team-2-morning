@@ -20,6 +20,7 @@ class App extends React.Component {
       github: "",
       file: "",
       palette: "1",
+      url:""
     })
 
     this.state = localStorageData;
@@ -27,12 +28,38 @@ class App extends React.Component {
     this.handlePalette = this.handlePalette.bind(this);
     this.resetData = this.resetData.bind(this);
     this.isValidated = this.isValidated.bind(this);
+    this.generateUrl = this.generateUrl.bind(this);
   }
+
   handlePalette(data) {
     this.setState({ palette: data });
   }
+
   handleInput(data) {
     this.setState({ [data.id]: data.inputValue });
+  }
+
+  generateUrl() {
+    return ( fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: this.state.name,
+        job: this.state.job,
+        photo: this.state.file,
+        phone: this.state.phone,
+        email: this.state.email,
+        linkedin: this.state.linkedin,
+        github: this.state.github,
+        palette: parseInt(this.state.palette)
+      })
+    })
+      .then(response => response.json())
+      .then(data => this.setState({ url: data.cardURL }))
+      )
+    // console.log(this.state)
   }
 
   isValidated() {
@@ -59,7 +86,8 @@ class App extends React.Component {
       email: "",
       linkedin: "",
       github: "",
-      palette: "1"
+      palette: "1",
+      url:""
     });
   }
 
@@ -82,7 +110,7 @@ class App extends React.Component {
                 <Header />
                 <main className="main">
                   <Card formData={this.state} palettesData={this.state.palette} resetData={this.resetData} />
-                  <Form handleInput={this.handleInput} handlePalette={this.handlePalette} file={this.state.file} formData={this.state} palettesData={this.state.palette} isValidated={this.isValidated()} />
+                  <Form handleInput={this.handleInput} handlePalette={this.handlePalette} file={this.state.file} formData={this.state} palettesData={this.state.palette} isValidated={this.isValidated()} generateUrl={this.generateUrl} />
                 </main>
               </>
             )}
