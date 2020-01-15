@@ -5,7 +5,7 @@
 }
 
 .collapsable-content {
-    text-transform: uppercase;
+    // text-transform: uppercase;
 }
 
 .button__input {
@@ -28,6 +28,7 @@
     align-items: center;
     color: $white;
     margin: 20px auto;
+
 }
 
 .button-active {
@@ -41,6 +42,7 @@
     align-items: center;
     color: $white;
     margin: 20px auto;
+    cursor: pointer;
 }
 
 .fa-address-card {
@@ -51,6 +53,8 @@
 .button__title {
     font-size: 1.8rem;
     font-family: $opensans;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .share__twitter {
@@ -75,6 +79,7 @@
         align-items: center;
         font-family: $opensans;
         text-decoration: none;
+        font-size: 1.4rem;
     }
 
     &-url {
@@ -85,8 +90,10 @@
 
     &-message {
         margin-bottom: 0.5rem;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         font-weight: 600;
+        text-align: center;
+        color: $mediumOrange;
     }
 
     &-a {

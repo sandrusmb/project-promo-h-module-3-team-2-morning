@@ -20,7 +20,7 @@ class App extends React.Component {
       github: "",
       file: "",
       palette: "1",
-      url:""
+      url: ""
     })
 
     this.state = localStorageData;
@@ -40,7 +40,7 @@ class App extends React.Component {
   }
 
   generateUrl() {
-    return ( fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
+    fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -58,7 +58,7 @@ class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => this.setState({ url: data.cardURL }))
-      )
+
     // console.log(this.state)
   }
 
@@ -87,14 +87,16 @@ class App extends React.Component {
       linkedin: "",
       github: "",
       palette: "1",
-      url:""
+      url: ""
     });
   }
 
   componentDidUpdate() {
-    LocalStorage.set('user', this.state);
+    LocalStorage.set('user', {
+      ...this.state,
+      palette: this.state.palette + ''
+    });
   }
-
 
   render() {
     console.log(this.state)
