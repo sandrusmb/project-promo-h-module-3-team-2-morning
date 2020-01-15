@@ -86,14 +86,15 @@
         color: $mediumOrange;
         margin-bottom: 1rem;
         font-size: 1.2rem;
+        font-weight: 600;
     }
 
     &-message {
         margin-bottom: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         font-weight: 600;
         text-align: center;
-        color: $mediumOrange;
+        color: $grey;
     }
 
     &-a {

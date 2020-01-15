@@ -11,12 +11,12 @@ function ShareContent(props) {
                 <i className="far fa-address-card"></i>
                 <h2 className="button__title">Crear tarjeta</h2>
             </button>
-            <div className={` ${props.url !== ''? "share__twitter -button" : "share__twitter hiddenButton"}`}>
+            <div className={` ${props.url !== '' ? "share__twitter -button" : "share__twitter hiddenButton"}`}>
                 <span className="share__twitter-message"> Tu tarjeta ha sido
-                    creada: {props.url}
+                    creada:
                 </span>
-                <p className='share__twitter-url js-response'></p>
-                <a target="_blank" href = {`https://twitter.com/intent/tweet?text=${twitterText}${props.url}`}
+                <p className="share__twitter-url">{props.url}</p>
+                <a target="_blank" href={`https://twitter.com/intent/tweet?text=${twitterText}${props.url}`}
                     className="js-share__twitter share__twitter-button">
                     <i className="fab fa-twitter"></i>
                     Compartir en Twitter
