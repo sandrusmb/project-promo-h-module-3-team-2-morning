@@ -23,7 +23,7 @@ function HeaderLanding() {
       <Link className="start-button" to="/card">
         <a href="card.html">
           comenzar
-      </a>
+        </a>
       </Link>
     </header>
   );
