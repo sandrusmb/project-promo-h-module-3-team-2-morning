@@ -43,26 +43,30 @@
 
 .hidden {
   .collapsable-content {
-    display: none;
-    // overflow: hidden // visibility: hidden;
-    // opacity: 0;
-    // transition: visibility 0s 2s, opacity 2s linear;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease-in;
   }
 
   .collapsible--arrow {
     transform: rotate(0deg);
+    transition: transform 1.2s ease;
   }
 }
 
 .open {
+  .collapsable-box {
+    border-bottom: 1px solid transparent;
+  }
+
   .collapsable-content {
     border-left: 0.1px solid transparent;
-    // visibility: visible;
-    // opacity: 1;
-    // transition: opacity 2s linear;
+    max-height: 100%;
+    transition: max-height 1.5s ease-in;
   }
 
   .collapsible--arrow {
     transform: rotate(-180deg) translateY(50%);
+    transition: transform 1.2s ease;
   }
 }

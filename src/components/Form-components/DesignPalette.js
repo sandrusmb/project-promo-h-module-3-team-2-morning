@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class DesignPalette extends React.Component {
   constructor(props) {
@@ -8,11 +9,12 @@ class DesignPalette extends React.Component {
 
   handlePalette(event) {
     let checked = event.target.value;
-    // console.log(this.props)
     this.props.handlePalette(checked);
   }
   render() {
+
     return (
+
       <React.Fragment>
         <div className="color-box__palettes">
           <div className="palette-container">
@@ -26,8 +28,8 @@ class DesignPalette extends React.Component {
                 value={this.props.value}
                 name={this.props.name}
                 className="palette-container__input"
-                defaultChecked={this.props.defaultChecked}
                 onChange={this.handlePalette}
+                checked={this.props.checked}
 
               />
               <div className="palette">
@@ -42,5 +44,15 @@ class DesignPalette extends React.Component {
     );
   }
 }
+
+DesignPalette.propTypes = {
+  htmlFor: PropTypes.string,
+  id: PropTypes.string,
+  type: PropTypes.string,
+  value: PropTypes.string,
+  name: PropTypes.string,
+  onChange: PropTypes.string,
+  checked: PropTypes.bool
+};
 
 export default DesignPalette;

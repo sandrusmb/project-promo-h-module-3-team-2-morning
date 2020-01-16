@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../stylesheets/Sass-components/Collapsable.scss'
+import PropTypes from 'prop-types';
 
 class Collapsable extends React.Component {
     constructor(props) {
@@ -43,5 +44,11 @@ class Collapsable extends React.Component {
         );
     }
 }
+
+Collapsable.propTypes = {
+    handleClick: PropTypes.func,
+    icons: PropTypes.string,
+    names: PropTypes.string
+};
 
 export default Collapsable;

@@ -1,14 +1,12 @@
 import React from "react";
 import "../../stylesheets/Sass-components/User.scss";
+import PropTypes from 'prop-types';
 
 class User extends React.Component {
   render(props) {
-    console.log(this.props);
     const name = this.props.formData.name;
     const job = this.props.formData.job;
-    // console.log(this.props.palettesData);
     const palettes = this.props.palettesData;
-    console.log(palettes);
     return (
       <div className="user-details">
         <header className={`user__palette${palettes || 1}`}>
@@ -19,4 +17,11 @@ class User extends React.Component {
     );
   }
 }
+
+User.propTypes = {
+  name: PropTypes.string,
+  job: PropTypes.string,
+  palettes: PropTypes.string,
+};
+
 export default User;
