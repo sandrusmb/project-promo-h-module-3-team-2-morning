@@ -1,8 +1,8 @@
 import React from "react";
 import "../../stylesheets/Sass-components/Icons.scss";
+import PropTypes from 'prop-types';
 
 function Icons(props) {
-
   const palettes = props.palettesData;
 
   return (
@@ -34,5 +34,12 @@ function Icons(props) {
     </footer>
   );
 }
+
+Icons.propTypes = {
+  palettes: PropTypes.string,
+  title: PropTypes.string,
+  icons: PropTypes.array,
+  formData: PropTypes.object
+};
 
 export default Icons;

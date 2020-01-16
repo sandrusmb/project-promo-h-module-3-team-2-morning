@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../stylesheets/Sass-components/ShareContent.scss'
+import PropTypes from 'prop-types';
 
 function ShareContent(props) {
     const twitterText = '¡Échale un vistazo a mi tarjeta de visita zero-waste! ¿A qué esperas para hacer la tuya? ';
@@ -23,5 +24,11 @@ function ShareContent(props) {
         </section>
     );
 }
+
+ShareContent.propTypes = {
+    isValidated: PropTypes.bool,
+    generateUrl: PropTypes.func,
+    url: PropTypes.string,
+};
 
 export default ShareContent;

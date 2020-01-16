@@ -5,8 +5,7 @@ import Share from './Form-components/Share';
 import Collapsable from './Form-components/Collapsable';
 import collapsableApi from '../api/collapsableApi.json';
 import '../stylesheets/Sass-components/Form.scss';
-
-
+import PropTypes from 'prop-types';
 
 class Form extends React.Component {
     constructor(props) {
@@ -21,7 +20,7 @@ class Form extends React.Component {
     }
     render() {
         const data = this.state.collapsable;
-        console.log(this.props.isValidated)
+
         return (
             <form onSubmit={this.handleSubmit} className="form">
 
@@ -45,5 +44,16 @@ class Form extends React.Component {
         );
     }
 }
+
+Form.propTypes = {
+    palettesData: PropTypes.string,
+    handlePalette: PropTypes.func,
+    handleInput: PropTypes.func,
+    formData: PropTypes.object,
+    file: PropTypes.string,
+    isValidated: PropTypes.bool,
+    generateUrl: PropTypes.func,
+    url: PropTypes.string,
+};
 
 export default Form;

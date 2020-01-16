@@ -5,6 +5,7 @@ import Photo from "./Card-components/Photo";
 import IconsCard from "./Card-components/Icons";
 import "../stylesheets/Sass-components/Card.scss";
 import iconsApi from "../api/iconsapi.json";
+import PropTypes from 'prop-types';
 
 function Card(props) {
   return (
@@ -20,5 +21,12 @@ function Card(props) {
     </section>
   );
 }
+
+Card.propTypes = {
+  resetData: PropTypes.func,
+  formData: PropTypes.object,
+  icons: PropTypes.string,
+  palettesData: PropTypes.string
+};
 
 export default Card;

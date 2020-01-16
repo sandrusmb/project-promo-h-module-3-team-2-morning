@@ -45,7 +45,7 @@
   .collapsable-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.7s ease-in;
+    transition: max-height 1.5s ease-in;
   }
 
   .collapsible--arrow {
@@ -62,7 +62,7 @@
   .collapsable-content {
     border-left: 0.1px solid transparent;
     max-height: 100%;
-    transition: max-height 0.7s ease-in-out;
+    transition: max-height 1.5s ease-in;
   }
 
   .collapsible--arrow {

@@ -2,6 +2,7 @@ import React from "react";
 import DesignPalettes from "./DesignPalettes";
 import DesignPalette from "./DesignPalette";
 import api from "../../api/data.json";
+import PropTypes from 'prop-types';
 
 class Design extends React.Component {
   constructor() {
@@ -40,5 +41,10 @@ class Design extends React.Component {
     );
   }
 }
+
+Design.propTypes = {
+  handlePalette: PropTypes.func,
+  palettesData: PropTypes.string,
+};
 
 export default Design;
