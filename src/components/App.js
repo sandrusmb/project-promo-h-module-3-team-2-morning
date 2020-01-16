@@ -33,6 +33,7 @@ class App extends React.Component {
 
   handlePalette(data) {
     this.setState({ palette: data });
+    this.setState({ url: '' });
   }
 
   handleInput(data) {
