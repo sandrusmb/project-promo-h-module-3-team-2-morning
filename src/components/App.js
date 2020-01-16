@@ -59,7 +59,6 @@ class App extends React.Component {
       .then(response => response.json())
       .then(data => this.setState({ url: data.cardURL }))
 
-    // console.log(this.state)
   }
 
   isValidated() {
@@ -99,7 +98,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div>
 

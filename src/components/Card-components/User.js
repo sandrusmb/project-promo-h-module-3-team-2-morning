@@ -6,7 +6,6 @@ class User extends React.Component {
   render(props) {
     const name = this.props.formData.name;
     const job = this.props.formData.job;
-    console.log(this.props.palettesData);
     const palettes = this.props.palettesData;
     return (
       <div className="user-details">

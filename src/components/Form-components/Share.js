@@ -3,7 +3,6 @@ import ShareContent from './ShareContent';
 import PropTypes from 'prop-types';
 
 function Share(props) {
-    console.log(props.isValidated)
     return (
         <ShareContent isValidated={props.isValidated} generateUrl={props.generateUrl} url={props.url} />
     );

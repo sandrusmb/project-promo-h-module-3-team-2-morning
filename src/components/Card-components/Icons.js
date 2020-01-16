@@ -20,7 +20,7 @@ function Icons(props) {
           </span>
         ) : (
             <a
-              key={index} /* className="icon__palette2"  */
+              key={index}
               className={`icon__palette${palettes}`}
               target="_blank"
               rel="noopener noreferrer"

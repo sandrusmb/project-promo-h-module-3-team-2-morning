@@ -44,7 +44,7 @@ class Fill extends React.Component {
     const github = this.props.formData.github;
 
     return (
-      <section className="collapsable-content js-content">
+      <section className="collapsable-content">
         <label className="form__label" htmlFor="name">
           Nombre completo
         </label>

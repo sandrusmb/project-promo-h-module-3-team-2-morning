@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 function ShareContent(props) {
     const twitterText = '¡Échale un vistazo a mi tarjeta de visita zero-waste! ¿A qué esperas para hacer la tuya? ';
     const isValidated = props.isValidated;
-    console.log(props)
     return (
         <section className="share__container collapsable-content">
             <button className={`${isValidated === true ? "button-active" : "button"}`} onClick={props.generateUrl}>
