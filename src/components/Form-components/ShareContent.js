@@ -15,8 +15,8 @@ function ShareContent(props) {
                 <span className="share__twitter-message"> Tu tarjeta ha sido
                     creada:
                 </span>
-                <a href={props.url} className="share__twitter-url" target="_blank">{props.url}</a>
-                <a target="_blank" href={`https://twitter.com/intent/tweet?text=${twitterText}${props.url}`} className="share__twitter-button">
+                <a href={props.url} className="share__twitter-url" target="_blank" rel="noopener noreferrer">{props.url}</a>
+                <a target="_blank" rel="noopener noreferrer" href={`https://twitter.com/intent/tweet?text=${twitterText}${props.url}`} className="share__twitter-button">
                     <i className="fab fa-twitter"></i>Compartir en Twitter
                 </a>
             </div>

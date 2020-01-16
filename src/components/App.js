@@ -37,6 +37,7 @@ class App extends React.Component {
 
   handleInput(data) {
     this.setState({ [data.id]: data.inputValue });
+    this.setState({ url: '' });
   }
 
   generateUrl() {
