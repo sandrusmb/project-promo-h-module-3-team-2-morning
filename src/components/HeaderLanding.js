@@ -21,9 +21,7 @@ function HeaderLanding() {
         <p className="grid-text">Comparte</p>
       </div>
       <Link className="start-button" to="/card">
-        <a href="card.html">
-          comenzar
-        </a>
+        comenzar
       </Link>
     </header>
   );
