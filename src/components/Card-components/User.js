@@ -3,12 +3,10 @@ import "../../stylesheets/Sass-components/User.scss";
 
 class User extends React.Component {
   render(props) {
-    console.log(this.props);
     const name = this.props.formData.name;
     const job = this.props.formData.job;
     // console.log(this.props.palettesData);
     const palettes = this.props.palettesData;
-    console.log(palettes);
     return (
       <div className="user-details">
         <header className={`user__palette${palettes || 1}`}>

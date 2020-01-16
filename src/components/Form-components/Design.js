@@ -16,10 +16,6 @@ class Design extends React.Component {
 
 
           {this.state.data.map((palette, key) => {
-            console.log(palette.value);
-            console.log(this.props.palettesData);
-
-            console.log(this.props.palettesData, palette.value);
             return (
               <DesignPalette
                 key={key}
