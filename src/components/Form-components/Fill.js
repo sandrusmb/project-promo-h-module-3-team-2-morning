@@ -57,7 +57,7 @@ class Fill extends React.Component {
         </label>
         <div className="form__input--img">
           <input type="file" className="js__profile-upload-btn form__file" name="file" id="file" accept="image/*" ref={this.fileInput} onChange={this.handleImage} value={this.props.value} />
-          <button htmlFor=" file" className="js__profile-trigger form__file--label" onClick={this.handleClick}>
+          <button type="button" htmlFor=" file" className="js__profile-trigger form__file--label" onClick={this.handleClick}>
             Añadir imagen
           </button>
           <div className="js__profile-preview form__input--miniature" style={{ backgroundImage: `url(${this.props.file})` }}></div>
