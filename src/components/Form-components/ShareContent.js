@@ -7,15 +7,15 @@ function ShareContent(props) {
     const isValidated = props.isValidated;
     return (
         <section className="share__container collapsable-content">
-            <button className={`${isValidated === true ? "button-active" : "button"}`} onClick={props.generateUrl}>
+            <button className={`${!isValidated === false ? "button-active" : "button"}`} onClick={props.generateUrl}>
                 <i className="far fa-address-card"></i>
                 <h2 className="button__title">Crear tarjeta</h2>
             </button>
-            <div className={` ${props.url !== '' ? "share__twitter -button" : "share__twitter hiddenButton"}`}>
+            <div className={` ${!props.url ? "share__twitter hiddenButton" : "share__twitter -button"}`}>
                 <span className="share__twitter-message"> Tu tarjeta ha sido
                     creada:
                 </span>
-                <a href={props.url} className="share__twitter-url" target="_blank" rel="noopener noreferrer">{props.url}</a>
+                <a href={props.url} className={` ${!props.url ? "hiddenButton" : "share__twitter-url"}`} target="_blank" rel="noopener noreferrer">{props.url}</a>
                 <a target="_blank" rel="noopener noreferrer" href={`https://twitter.com/intent/tweet?text=${twitterText}${props.url}`} className="share__twitter-button">
                     <i className="fab fa-twitter"></i>Compartir en Twitter
                 </a>
