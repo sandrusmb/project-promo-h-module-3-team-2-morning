@@ -11,3 +11,14 @@ Este proyecto corresponde al tercer módulo de Adalab en el que aprendimos a cre
 - Implementar Scrum como marco de referencia para el desarrollo del producto, basándonos siempre en los valores de Agile como puntos clave del trabajo en equipo y la mejora continua
 - Mejorar la comunicación entre los miembros del equipo
 - Mejorar vuestras habilidades de comunicación en público al exponer el proyecto en la sesión final
+
+## Tecnologías
+
+- Sass para los estilos
+- ES6 y React para la estructuración del JS de la aplicación
+- Mediaqueries para que el diseño sea adaptable al dispositivo
+- Desarrollo usando la estrategia mobile first
+- Uso de git para el control de versiones del proyecto, con ramas y pull-requests para revisar los cambios de las compañeras
+- Publicación del resultado en Internet usando GitHub Pages
+- Transiciones y/o animaciones para mejorar interacciones con la aplicación
+- Implementar la navegación entre distintas páginas de la aplicación usando React router
