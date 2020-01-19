@@ -1,15 +1,13 @@
-# project-promo-h-module-3-team-2-morning
+# Un proyecto de código heredado
 
-Cada vez que se quiera hacer un **push** se debe realizar desde **/project-promo-h-module-3-team-2-morning**
+Este proyecto corresponde al tercer módulo de Adalab en el que aprendimos a crear páginas web responsive con React. Para ello, partimos de un código ya programado en HTML, CSS, SASS y Javascript de otro equipo y lo convertimos en componentes de React. 
 
-Recordad que la primera vez hay que hacer **npm install** desde **/project-new** para que funcione el proyecto
+## Objetivos
 
-## Para hacer Merge, pasos a seguir:(se debe realizar en project-promo-h-module-3-team-2-morning/project-new)
-
-- Desde tu rama -Hacer un git add -A -Hacer un git commit -m "" -Hacer un git push origin rama
-
-- Hay que cambiarse a Master -git checkout master -git pull
-
-- Volvemos a cambiar a nuestra rama (Vamos a mergear en nuestra rama con Master) -git checkout rama -git merge master -git push origin rama
-
-- En vez de mergear con rama master, se debe hacer un pull request con dev para asegurarnos y revisar los cambios
+- Aprender a leer y refactorizar código heredado
+- Identificar y generar los componentes de una página, separarlos y crear componentes visualmente similares a partir de estos
+- Usar React para crear una aplicación web sencilla
+- Buscar información en la documentación de librerías externas
+- Implementar Scrum como marco de referencia para el desarrollo del producto, basándonos siempre en los valores de Agile como puntos clave del trabajo en equipo y la mejora continua
+- Mejorar la comunicación entre los miembros del equipo
+- Mejorar vuestras habilidades de comunicación en público al exponer el proyecto en la sesión final
