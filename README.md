@@ -1,5 +1,7 @@
 # Un proyecto de código heredado
 
+http://beta.adalab.es/project-promo-h-module-3-team-2-morning/#/
+
 Este proyecto corresponde al tercer módulo de Adalab en el que aprendimos a crear páginas web responsive con React. Para ello, partimos de un código ya programado en HTML, CSS, SASS y Javascript de otro equipo y lo convertimos en componentes de React. 
 
 ## Objetivos
