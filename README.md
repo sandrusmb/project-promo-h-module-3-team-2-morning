@@ -23,4 +23,4 @@ Este proyecto corresponde al tercer módulo de Adalab en el que aprendimos a cre
 - Transiciones y/o animaciones para mejorar interacciones con la aplicación
 - Implementar la navegación entre distintas páginas de la aplicación usando React router
 
-![Home](https://github.com/sandrusmb/project-promo-h-module-3-team-2-morning/blob/master/images/Home.png)
+![Home](https://github.com/sandrusmb/project-promo-h-module-3-team-2-morning/images/Home.png)
